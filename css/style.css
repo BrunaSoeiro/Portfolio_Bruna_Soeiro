@@ -90,82 +90,85 @@ nav.menu a.btn-nav {
         text-align: center;
     }
 }
-/* SEÇÃO SOBRE – CAIXA ESTILIZADA */
+/* remova fundo do section - só serve como wrapper */
 #sobre {
-    max-width: 600px;
-    margin: 10px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.72); /* branco translúcido */
-    backdrop-filter: blur(4px);            /* efeito vidro */
-    border-radius: 18px;
-    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
-    font-size: 20px;
-    line-height: 1.7;
-    color: #4a2b4a;   /* tom escuro da sua paleta */
-    font-family: "Montserrat", sans-serif;
-    position: relative;
-    overflow: visible;
+    background: none;      /* sem fundo aqui */
+    padding: 40px 0;
 }
 
-/* TÍTULO DA SEÇÃO (se quiser usar depois) */
-#sobre h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: 800;
-    color: #5a2b5a;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    #sobre {
-        margin: 30px 15px;
-        padding: 25px;
-        font-size: 17px;
-    }
-}
-
-/* CONTAINER GERAL */
+/* container que alinha caixa branca + imagem */
 .sobre-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;        /* alinha verticalmente */
+    justify-content: center;    /* centraliza o conjunto */
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 0 20px;
 }
 
+/* caixa branca com o texto — controla a largura com flex-basis */
 .sobre-box {
-    max-width: 450px;  /* <-- Reduz o tamanho, isso evita invadir o lado direito */
+    flex: 0 0 48%;              /* ocupa ~48% do espaço */
+    max-width: 600px;           /* não cresce demais em telas enormes */
     padding: 30px;
-    background: rgba(255, 255, 255, 0.72);
+    background: rgba(255,255,255,0.72);
     backdrop-filter: blur(4px);
     border-radius: 18px;
-    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+    box-sizing: border-box;
 }
 
-/* TEXTO */
+/* texto (mantém seu estilo) */
 .sobre-texto {
     font-size: 20px;
     line-height: 1.7;
     color: #4a2b4a;
     font-family: "Montserrat", sans-serif;
 }
-.sobre-imagem img {
-    width: 360px;
-    max-width: 100%;
+
+/* wrapper da imagem — controla proporção e centraliza a imagem */
+.sobre-imagem {
+    flex: 0 0 44%;              /* ocupa ~44% do espaço */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 520px;
+    box-sizing: border-box;
 }
 
+/* imagem responsiva com limite de largura e mantendo proporção */
+.sobre-imagem img {
+    width: 100%;
+    max-width: clamp(220px, 40vw, 420px); /* se adapta a telas */
+    height: auto;
+    display: block;
+}
+
+/* RESPONSIVIDADE: vira coluna em telas menores */
 @media (max-width: 850px) {
     .sobre-container {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
+    }
+
+    .sobre-box {
+        flex: 0 0 100%;
+        max-width: 680px;
+    }
+
+    .sobre-imagem {
+        flex: 0 0 100%;
+        max-width: 360px;
     }
 
     .sobre-imagem img {
-        width: 260px;
-        margin-top: 20px;
+        max-width: 260px;
+        margin: 0 auto;
     }
+}
+
 }
 
 
