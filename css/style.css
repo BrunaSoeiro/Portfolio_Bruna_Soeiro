@@ -122,53 +122,57 @@ nav.menu a.btn-nav {
     }
 }
 
-/* CONTAINER LADO A LADO */
+/* CONTAINER GERAL */
 .sobre-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    position: relative;
+    padding: 60px 0;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* TEXTO */
 .sobre-texto {
-    flex: 1;                 /* ocupa metade do espaço */
-    text-align: justify;     /* texto justificado */
-    line-height: 1.7;
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-right: 40px;
 }
 
-/* IMAGEM DO LADO */
+/* IMAGEM FORA DA CAIXA */
 .sobre-imagem {
-    flex: 1;                 /* ocupa metade do espaço */
-    display: flex;
-    justify-content: center;
+    flex: 1;
+    position: relative;
 }
 
 .sobre-imagem img {
-    width: 100%;             /* ocupa toda a metade do container */
-    max-width: 450px;        /* limite para não ficar gigante demais */
-    height: auto;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
+    width: 360px;
+    position: absolute;
+    right: -80px;      /* empurra para fora da caixa */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-/* RESPONSIVIDADE — EMPILHAR NO CELULAR */
-@media (max-width: 900px) {
+/* RESPONSIVO */
+@media (max-width: 850px) {
     .sobre-container {
         flex-direction: column;
         text-align: center;
     }
 
     .sobre-texto {
-        text-align: justify; /* mantém justificado mesmo no mobile */
+        padding-right: 0;
     }
 
     .sobre-imagem img {
-        max-width: 70%;
+        position: static;
+        width: 260px;
         margin-top: 20px;
+        transform: none;
+        right: 0;
     }
 }
-
 
 
