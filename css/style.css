@@ -29,7 +29,6 @@ html, body {
 }
 
 /* ------------------------------------------------------------- */
-/* 📺 TELAS MUITO GRANDES (TV, monitores 4K etc) */
 /* ------------------------------------------------------------- */
 
 @media (min-width: 1600px) {
@@ -125,27 +124,18 @@ nav.menu a.btn-nav {
 
 #sobre {
     max-width: 600px;                     /* largura máxima da caixa */
-    margin: 30px;                         /* espaçamento externo */
+    margin: 0 300px;                         /* espaçamento externo */
     padding: 20px;                        /* espaçamento interno */
     background: rgba(255, 255, 255, 0.72);/* fundo branco translúcido */
     backdrop-filter: blur(4px);           /* efeito vidro */
     border-radius: 18px;                  /* bordas arredondadas */
     box-shadow: 0 6px 30px rgba(0,0,0,0.15); /* leve sombra */
-    font-size: 20px;                      /* tamanho do texto */
+    font-size: 18px;                      /* tamanho do texto */
     line-height: 1.7;                     /* espaçamento entre linhas */
     color: #4a2b4a;                       /* roxo escuro */
     font-family: "Montserrat", sans-serif;
-    position: relative;
-    overflow: visible;                    /* permite elementos ultrapassarem */
-}
-
-/* Responsividade do texto "sobre" */
-@media (max-width: 768px) {
-    #sobre {
-        margin: 30px 15px;
-        padding: 25px;
-        font-size: 17px; /* reduz tamanho */
-    }
+    
+    
 }
 
 /* ------------------------------------------------------------- */
@@ -155,33 +145,27 @@ nav.menu a.btn-nav {
 .sobre-container {
     display: flex;              /* coloca texto e imagem lado a lado */
     align-items: center;        /* alinha verticalmente */
-    padding: 60px 60px;            /* espaçamento vertical da seção */
+    padding: 10px 60px;            /* espaçamento vertical da seção */
     width: 100%;
-    max-width: 1100px;          /* limita largura */
-}
-
-/* Texto da seção */
-.sobre-texto {
-    flex: 1;                    /* ocupa metade da área */
-    font-size: 18px;
-    line-height: 1.6;
-    padding-right: 100px;        /* espaço entre texto e imagem */
-}
-
-/* Imagem da seção */
-.sobre-imagem {
-    flex: 1;                    /* ocupa outro lado da tela */
+    gap: 650px;
 }
 
 /* Tamanho da imagem */
 .sobre-imagem img {
-    width: 700px;
+    width: 900px;
 }
 
 /* ------------------------------------------------------------- */
 /* 📱 RESPONSIVIDADE — SEÇÃO SOBRE */
 /* ------------------------------------------------------------- */
 
+@media (max-width: 768px) {
+    #sobre {
+        margin: 30px 15px;
+        padding: 25px;
+        font-size: 17px; /* reduz tamanho */
+    }
+}
 @media (max-width: 850px) {
 
     .sobre-container {
