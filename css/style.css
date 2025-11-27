@@ -92,7 +92,7 @@ nav.menu a.btn-nav {
 }
 /* SEÇÃO SOBRE – CAIXA ESTILIZADA */
 #sobre {
-    max-width: 400px;
+    max-width: 900px;
     margin: 10px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.72); /* branco translúcido */
