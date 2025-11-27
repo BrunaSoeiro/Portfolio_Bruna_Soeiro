@@ -121,4 +121,40 @@ nav.menu a.btn-nav {
         font-size: 17px;
     }
 }
+/* ---- LAYOUT DO SOBRE EM DUAS COLUNAS ---- */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Caixa de texto */
+.sobre-texto {
+    flex: 1;
+}
+
+/* Imagem */
+.sobre-img img {
+    width: 330px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    border: 4px solid #b27db2; /* mantém a paleta */
+}
+
+/* ---- RESPONSIVIDADE ---- */
+@media (max-width: 900px) {
+    .sobre-container {
+        flex-direction: column;     /* vira coluna no mobile */
+        text-align: center;
+    }
+
+    .sobre-img img {
+        width: 80%;
+        max-width: 280px;
+        margin-top: 20px;
+    }
+}
 
