@@ -1,8 +1,38 @@
 body{
     background-color: #cca1cc;
 }
-header img {
+.hero {
     width: 100%;
-    height: auto;
-    display: block; /* remove espaço extra abaixo da imagem */
+    background-image: url('css/images/fundo2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 📺 TV ou telas MUITO grandes */
+@media (min-width: 1600px) {
+    .hero {
+        height: 600px;
+    }
+}
+
+/* 🖥️ Monitor grande (como o do curso) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .hero {
+        height: 500px;
+    }
+}
+
+/* 💻 Notebook */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+        height: 380px;
+    }
+}
+
+/* 📱 Celular */
+@media (max-width: 767px) {
+    .hero {
+        height: 220px;
+    }
 }
