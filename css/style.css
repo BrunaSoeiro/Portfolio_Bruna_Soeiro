@@ -1,6 +1,3 @@
-body{
-    background-color: #cca1cc;
-}
 html, body {
     width: 100%;
     overflow-x: hidden; /* remove a barra lateral */
@@ -9,11 +6,14 @@ html, body {
 }
 .hero {
     width: 100%;
+    height: 850px; /* altura original */
     background-image: url('images/fundo2.png');
-    background-size: contain;
+    background-size: contain; /* mantém a imagem inteira */
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #cca1cc; /* cor de fundo caso sobrem espaços */
 }
+
 
 /* 📺 TV ou telas MUITO grandes */
 @media (min-width: 1600px) {
