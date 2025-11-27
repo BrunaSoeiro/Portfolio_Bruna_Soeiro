@@ -143,19 +143,8 @@ nav.menu a.btn-nav {
     padding-right: 40px;
 }
 
-/* IMAGEM FORA DA CAIXA */
-.sobre-imagem {
-    flex: 1;
-    position: relative;
-}
-
 .sobre-imagem img {
-    width: 450px;            /* maior */
-    position: absolute;
-    right: -90px;            /* mais perto do texto */
-    top: 40%;                /* sobe a imagem */
-    transform: translateY(-40%);
-    pointer-events: none;
+    width: 450px; 
 }
 
 
