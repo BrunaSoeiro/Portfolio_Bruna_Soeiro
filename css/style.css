@@ -53,3 +53,40 @@ html, body {
         background-position: top center;
     }
 }
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    flex-wrap: wrap; /* permite quebrar no celular */
+}
+
+/* BOTÕES */
+.btn-nav {
+    padding: 12px 25px;
+    background-color: #b27db2;      /* tom mais escuro do seu roxo */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* HOVER */
+.btn-nav:hover {
+    background-color: #cca1cc;      /* sua cor principal */
+    color: #5a2b5a;                 /* tom mais escuro para contraste */
+    border-color: #5a2b5a;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 767px) {
+    .btn-nav {
+        width: 45%;   /* dois por linha no celular */
+        text-align: center;
+    }
+}
