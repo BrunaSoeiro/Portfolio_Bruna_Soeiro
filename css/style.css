@@ -1,6 +1,12 @@
 body{
     background-color: #cca1cc;
 }
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* remove a barra lateral */
+    padding: 0;
+    margin: 0;
+}
 .hero {
     width: 100%;
     background-image: url('css/images/fundo2.png');
@@ -36,3 +42,4 @@ body{
         height: 220px;
     }
 }
+
