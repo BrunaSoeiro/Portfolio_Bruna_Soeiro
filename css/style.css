@@ -1,36 +1,48 @@
-/* Fundo geral */
+/* ------------------------------------------------------------- */
+/* 🌸 FUNDO GERAL DA PÁGINA */
+/* ------------------------------------------------------------- */
+
 body {
-    background-color: #cca1cc;
-    margin: 0;
-    padding: 0;
+    background-color: #cca1cc; /* cor de fundo da página */
+    margin: 0;                 /* remove margens padrão */
+    padding: 0;                /* remove espaçamentos padrão */
 }
+
 html, body {
-    width: 100%;
-    overflow-x: hidden;
+    width: 100%;               /* garante largura total */
+    overflow-x: hidden;        /* evita barra de rolagem horizontal */
 }
 
-/* HERO BASE */
+/* ------------------------------------------------------------- */
+/* 🌟 HERO (a seção do topo com imagem grande) */
+/* ------------------------------------------------------------- */
+
 .hero {
-    width: 100%;
-    background-image: url('images/fundo2.png');
-    background-size: contain;  /* não corta */
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-color: #cca1cc;
+    width: 100%;                                  /* ocupa 100% da largura */
+    background-image: url('images/fundo2.png');   /* imagem de fundo */
+    background-size: contain;                     /* mostra a imagem inteira sem cortar */
+    background-position: center top;              /* centraliza horizontalmente e alinha no topo */
+    background-repeat: no-repeat;                 /* evita que repita */
+    background-color: #cca1cc;                    /* cor atrás da imagem */
 
-    aspect-ratio: 1920 / 850; /* mantém proporção original */
+    aspect-ratio: 1920 / 850;                     /* mantém proporção da imagem original */
 }
 
-/* ------------------------------------------------------------------ */
-/* 📺 TV (telas muito grandes) */
+/* ------------------------------------------------------------- */
+/* 📺 TELAS MUITO GRANDES (TV, monitores 4K etc) */
+/* ------------------------------------------------------------- */
+
 @media (min-width: 1600px) {
     .hero {
-        background-size: contain; /* mantém tudo visível */
+        background-size: contain;
         background-position: center top;
     }
 }
 
-/* 🖥️ Monitor grande */
+/* ------------------------------------------------------------- */
+/* 🖥️ MONITORES GRANDES */
+/* ------------------------------------------------------------- */
+
 @media (min-width: 1200px) and (max-width: 1599px) {
     .hero {
         background-size: contain;
@@ -38,7 +50,10 @@ html, body {
     }
 }
 
-/* 💻 Notebook */
+/* ------------------------------------------------------------- */
+/* 💻 NOTEBOOKS / TELAS MÉDIAS */
+/* ------------------------------------------------------------- */
+
 @media (min-width: 768px) and (max-width: 1199px) {
     .hero {
         background-size: contain;
@@ -46,111 +61,147 @@ html, body {
     }
 }
 
-/* 📱 Celular */
+/* ------------------------------------------------------------- */
+/* 📱 CELULARES */
+/* ------------------------------------------------------------- */
+
 @media (max-width: 767px) {
     .hero {
-        background-size: contain; /* garante imagem inteira */
+        background-size: contain;  /* garante que a imagem inteira apareça */
         background-position: top center;
     }
 }
 
+/* ------------------------------------------------------------- */
+/* 🌸 MENU DE NAVEGAÇÃO */
+/* ------------------------------------------------------------- */
+
 .menu {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 20px 0;
-    flex-wrap: wrap; /* permite quebrar no celular */
+    display: flex;             /* deixa os itens lado a lado */
+    justify-content: center;   /* centraliza horizontalmente */
+    gap: 60px;                 /* espaçamento entre botões */
+    padding: 20px 0;           /* espaçamento vertical */
+    flex-wrap: wrap;           /* permite quebrar linha no celular */
 }
 
-/* BOTÕES */
+/* ------------------------------------------------------------- */
+/* 🔘 BOTÕES DO MENU */
+/* ------------------------------------------------------------- */
+
 nav.menu a.btn-nav {
-    padding: 12px 25px;
-    background-color: #b27db2;      /* tom mais escuro do seu roxo */
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s ease;
-    border: 2px solid transparent;
+    padding: 12px 25px;            /* tamanho do botão */
+    background-color: #b27db2;     /* roxo escuro */
+    color: white;                  /* texto branco */
+    text-decoration: none;         /* remove sublinhado */
+    font-size: 18px;               /* tamanho da fonte */
+    font-weight: bold;             /* deixa em negrito */
+    border-radius: 8px;            /* cantos arredondados */
+    transition: 0.3s ease;         /* animação suave */
+    border: 2px solid transparent; /* borda só aparece no hover */
 }
 
-/* HOVER */
+/* HOVER = quando passa o mouse */
 .btn-nav:hover {
-    background-color: #cca1cc;      /* sua cor principal */
-    color: #5a2b5a;                 /* tom mais escuro para contraste */
-    border-color: #5a2b5a;
-    transform: scale(1.05);
+    background-color: #cca1cc; /* muda para o roxo claro */
+    color: #5a2b5a;            /* texto escuro para contraste */
+    border-color: #5a2b5a;     /* borda aparece */
+    transform: scale(1.05);    /* dá zoom suave */
 }
 
-/* RESPONSIVIDADE */
+/* ------------------------------------------------------------- */
+/* 📱 BOTÕES RESPONSIVOS NO CELULAR */
+/* ------------------------------------------------------------- */
+
 @media (max-width: 767px) {
     .btn-nav {
-        width: 45%;   /* dois por linha no celular */
-        text-align: center;
+        width: 45%;           /* dois botões por linha */
+        text-align: center;   /* centraliza texto */
     }
 }
 
-/* SEÇÃO SOBRE – CAIXA ESTILIZADA */ 
-#sobre { 
-    max-width: 600px; 
-    margin: 10px;
-    padding: 10px; 
-    background: rgba(255, 255, 255, 0.72); /* branco translúcido */ 
-    backdrop-filter: blur(4px); /* efeito vidro */ 
-    border-radius: 18px; 
-    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15); 
-    font-size: 20px; 
-    line-height: 1.7; 
-    color: #4a2b4a; /* tom escuro da sua paleta */ 
-    font-family: "Montserrat", sans-serif; position: relative; overflow: visible; 
-} 
-/* Responsividade */ 
-@media (max-width: 768px) { 
-    #sobre { margin: 30px 15px; 
-            padding: 25px; 
-            font-size: 17px; } 
-} 
-/* CONTAINER GERAL */ 
-.sobre-container { 
-    display: flex; 
-    align-items: center; 
-    position: relative; 
-    padding: 60px 0; 
-    width: 100%; 
-    max-width: 1100px;
-    margin: 0 auto; } 
-/* TEXTO */ 
-.sobre-texto { 
-    flex: 1; 
-    font-size: 18px; 
-    line-height: 1.6; 
-    padding-right: 40px; 
-} 
-.sobre-imagem{ 
-    flex: 1; 
-} 
-.sobre-imagem img { 
-    width: 700px; 
+/* ------------------------------------------------------------- */
+/* 💜 SEÇÃO “SOBRE” (caixa com texto) */
+/* ------------------------------------------------------------- */
+
+#sobre {
+    max-width: 600px;                     /* largura máxima da caixa */
+    margin: 30px;                         /* espaçamento externo */
+    padding: 20px;                        /* espaçamento interno */
+    background: rgba(255, 255, 255, 0.72);/* fundo branco translúcido */
+    backdrop-filter: blur(4px);           /* efeito vidro */
+    border-radius: 18px;                  /* bordas arredondadas */
+    box-shadow: 0 6px 30px rgba(0,0,0,0.15); /* leve sombra */
+    font-size: 20px;                      /* tamanho do texto */
+    line-height: 1.7;                     /* espaçamento entre linhas */
+    color: #4a2b4a;                       /* roxo escuro */
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    overflow: visible;                    /* permite elementos ultrapassarem */
 }
-/* RESPONSIVO */
-@media (
-    max-width: 850px) 
-{ 
+
+/* Responsividade do texto "sobre" */
+@media (max-width: 768px) {
+    #sobre {
+        margin: 30px 15px;
+        padding: 25px;
+        font-size: 17px; /* reduz tamanho */
+    }
+}
+
+/* ------------------------------------------------------------- */
+/* 📦 LAYOUT DA SEÇÃO SOBRE (texto + imagem lado a lado) */
+/* ------------------------------------------------------------- */
+
 .sobre-container {
-    flex-direction: column; 
-    text-align: center;
-} .sobre-texto {
-    padding-right: 0; 
-} 
-    .sobre-imagem img { 
-        position: static;
-        margin: 20px auto 0; 
+    display: flex;              /* coloca texto e imagem lado a lado */
+    align-items: center;        /* alinha verticalmente */
+    padding: 60px 60px;            /* espaçamento vertical da seção */
+    width: 100%;
+    max-width: 1100px;          /* limita largura */
+    margin: 0 auto;             /* centraliza tudo */
+}
+
+/* Texto da seção */
+.sobre-texto {
+    flex: 1;                    /* ocupa metade da área */
+    font-size: 18px;
+    line-height: 1.6;
+    padding-right: 40px;        /* espaço entre texto e imagem */
+}
+
+/* Imagem da seção */
+.sobre-imagem {
+    flex: 1;                    /* ocupa outro lado da tela */
+}
+
+/* Tamanho da imagem */
+.sobre-imagem img {
+    width: 700px;
+}
+
+/* ------------------------------------------------------------- */
+/* 📱 RESPONSIVIDADE — SEÇÃO SOBRE */
+/* ------------------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    .sobre-container {
+        flex-direction: column; /* coloca texto e imagem um abaixo do outro */
+        text-align: center;     /* centraliza texto */
+    }
+
+    .sobre-texto {
+        padding-right: 0;       /* remove espaçamento */
+    }
+
+    .sobre-imagem img {
+        position: static; 
+        margin: 20px auto 0;    /* centraliza imagem */
         display: block;
-        width: 230px; }
+        width: 230px;           /* reduz tamanho no celular */
+    }
 }
-}
 
-
-
-
+/* ------------------------------------------------------------- */
+/* ⚠️ OBS: havia um } sobrando no seu código original → removido */
+/* ------------------------------------------------------------- */
