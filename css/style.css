@@ -94,7 +94,7 @@ nav.menu a.btn-nav {
 #sobre {
     max-width: 900px;
     margin: 60px auto;
-    padding: 40px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.72); /* branco translúcido */
     backdrop-filter: blur(4px);            /* efeito vidro */
     border-radius: 18px;
