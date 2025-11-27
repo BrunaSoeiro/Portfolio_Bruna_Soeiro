@@ -116,7 +116,7 @@ nav.menu a.btn-nav {
     display: flex; 
     align-items: center; 
     position: relative; 
-    padding: 0; 
+    padding: 60px 0; 
     width: 100%; 
     max-width: 1100px;
     margin: 0 auto; } 
