@@ -128,19 +128,27 @@ nav.menu a.btn-nav {
 .sobre-container {
     display: flex;
     align-items: center;
-    position: relative;
-    padding: 60px 0;
-    width: 100%;
-    max-width: 1100px;
+    justify-content: center;
+    gap: 40px; /* espaço entre texto e imagem */
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 40px 20px;
+}
+.sobre-box {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(4px);
+    border-radius: 18px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* TEXTO */
 .sobre-texto {
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.6;
-    padding-right: 40px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #4a2b4a;
+    font-family: "Montserrat", sans-serif;
 }
 .sobre-imagem{
     flex: 1;
@@ -157,16 +165,11 @@ nav.menu a.btn-nav {
         text-align: center;
     }
 
-    .sobre-texto {
-        padding-right: 0;
-    }
-  .sobre-imagem img {
-        position: static;
-        margin: 20px auto 0;
-        display: block;
-        width: 230px;
+    .sobre-imagem img {
+        width: 260px;
+        margin-top: 20px;
     }
 }
-}
+
 
 
