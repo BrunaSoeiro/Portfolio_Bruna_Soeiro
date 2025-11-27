@@ -147,17 +147,15 @@ nav.menu a.btn-nav {
     box-shadow: none;
 }
 
-/* ---- RESPONSIVIDADE ---- */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .sobre-container {
-        flex-direction: column;     /* vira coluna no mobile */
+        flex-direction: column;
         text-align: center;
     }
-
-    .sobre-img img {
-        width: 80%;
+    
+    .sobre-img {
         max-width: 280px;
-        margin-top: 20px;
     }
 }
+/*
 
