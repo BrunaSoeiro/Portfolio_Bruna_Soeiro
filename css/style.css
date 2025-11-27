@@ -57,7 +57,7 @@ html, body {
 .menu {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     padding: 20px 0;
     flex-wrap: wrap; /* permite quebrar no celular */
 }
