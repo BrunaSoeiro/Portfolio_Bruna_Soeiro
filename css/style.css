@@ -1,45 +1,55 @@
+/* Fundo geral */
+body {
+    background-color: #cca1cc;
+    margin: 0;
+    padding: 0;
+}
 html, body {
     width: 100%;
-    overflow-x: hidden; /* remove a barra lateral */
-    padding: 0;
-    margin: 0;
+    overflow-x: hidden;
 }
+
+/* HERO BASE */
 .hero {
     width: 100%;
-    height: 850px; /* altura original */
     background-image: url('images/fundo2.png');
-    background-size: contain; /* mantém a imagem inteira */
-    background-position: center;
+    background-size: contain;  /* não corta */
+    background-position: center top;
     background-repeat: no-repeat;
-    background-color: #cca1cc; /* cor de fundo caso sobrem espaços */
+    background-color: #cca1cc;
+
+    aspect-ratio: 1920 / 850; /* mantém proporção original */
 }
 
-
-/* 📺 TV ou telas MUITO grandes */
+/* ------------------------------------------------------------------ */
+/* 📺 TV (telas muito grandes) */
 @media (min-width: 1600px) {
     .hero {
-        height: 600px;
+        background-size: contain; /* mantém tudo visível */
+        background-position: center top;
     }
 }
 
-/* 🖥️ Monitor grande (como o do curso) */
+/* 🖥️ Monitor grande */
 @media (min-width: 1200px) and (max-width: 1599px) {
     .hero {
-        height: 500px;
+        background-size: contain;
+        background-position: center top;
     }
 }
 
 /* 💻 Notebook */
 @media (min-width: 768px) and (max-width: 1199px) {
     .hero {
-        height: 380px;
+        background-size: contain;
+        background-position: top center;
     }
 }
 
 /* 📱 Celular */
 @media (max-width: 767px) {
     .hero {
-        height: 220px;
+        background-size: contain; /* garante imagem inteira */
+        background-position: top center;
     }
 }
-
