@@ -168,14 +168,13 @@ nav.menu a.btn-nav {
     .sobre-texto {
         padding-right: 0;
     }
-
-    .sobre-imagem img {
+  .sobre-imagem img {
         position: static;
-        width: 260px;
-        margin-top: 20px;
-        transform: none;
-        right: 0;
+        margin: 20px auto 0;
+        display: block;
+        width: 230px;
     }
+}
 }
 
 
