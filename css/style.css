@@ -109,7 +109,7 @@ nav.menu a.btn-nav {
 
 /* caixa branca com o texto — controla a largura com flex-basis */
 .sobre-box {
-    flex: 0 0 48%;              /* ocupa ~48% do espaço */
+    flex: 1;             
     max-width: 600px;           /* não cresce demais em telas enormes */
     padding: 30px;
     background: rgba(255,255,255,0.72);
@@ -129,7 +129,7 @@ nav.menu a.btn-nav {
 
 /* wrapper da imagem — controla proporção e centraliza a imagem */
 .sobre-imagem {
-    flex: 0 0 44%;              /* ocupa ~44% do espaço */
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
