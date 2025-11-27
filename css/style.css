@@ -122,6 +122,7 @@ nav.menu a.btn-nav {
     }
 }
 /* ---- LAYOUT DO SOBRE EM DUAS COLUNAS ---- */
+/* 🔹 Container em duas colunas */
 .sobre-container {
     display: flex;
     align-items: center;
@@ -129,22 +130,20 @@ nav.menu a.btn-nav {
     gap: 40px;
 }
 
-/* Caixa de texto */
+/* 🔹 Texto ocupa mais espaço */
 .sobre-texto {
     flex: 2;
 }
 
-.sobre-img-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.sobre-img {
-    width: 100%;
-    max-width: 330px;
-    border: none;
-    box-shadow: none;
+/* 🔹 Imagem */
+.sobre-img img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;      /* remove qualquer borda */
+    box-shadow: none;  /* garante que nada apareça */
+    border-radius: 0;  /* sem arredondamento */
 }
 
 @media (max-width: 768px) {
