@@ -142,10 +142,11 @@ nav.menu a.btn-nav {
     line-height: 1.6;
     padding-right: 40px;
 }
-
-.sobre-imagem img {
-    width: 650px; 
+.sobre-imagem{
     flex: 1;
+}
+.sobre-imagem img {
+    width: 700px; 
 }
 
 
