@@ -150,13 +150,14 @@ nav.menu a.btn-nav {
 }
 
 .sobre-imagem img {
-    width: 360px;
+    width: 450px;            /* maior */
     position: absolute;
-    right: -150px;     /* joga a imagem bem pra fora */
-    top: 50%;
-    transform: translateY(-50%);
+    right: -90px;            /* mais perto do texto */
+    top: 40%;                /* sobe a imagem */
+    transform: translateY(-40%);
     pointer-events: none;
 }
+
 
 /* RESPONSIVO */
 @media (max-width: 850px) {
