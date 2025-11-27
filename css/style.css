@@ -121,6 +121,7 @@ nav.menu a.btn-nav {
         font-size: 17px;
     }
 }
+
 /* CONTAINER LADO A LADO */
 .sobre-container {
     display: flex;
@@ -131,18 +132,25 @@ nav.menu a.btn-nav {
 
 /* TEXTO */
 .sobre-texto {
-    flex: 1;
+    flex: 1;                 /* ocupa metade do espaço */
+    text-align: justify;     /* texto justificado */
+    line-height: 1.7;
 }
 
 /* IMAGEM DO LADO */
+.sobre-imagem {
+    flex: 1;                 /* ocupa metade do espaço */
+    display: flex;
+    justify-content: center;
+}
+
 .sobre-imagem img {
-    width: 750px;
-    max-width: 100%;
+    width: 100%;             /* ocupa toda a metade do container */
+    max-width: 450px;        /* limite para não ficar gigante demais */
     height: auto;
     border: none;
-    box-shadow: none; /* tira qualquer sombra */
-    border-radius: 0; /* garante que fique totalmente limpa */
-    flex: 1;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 /* RESPONSIVIDADE — EMPILHAR NO CELULAR */
@@ -152,10 +160,15 @@ nav.menu a.btn-nav {
         text-align: center;
     }
 
+    .sobre-texto {
+        text-align: justify; /* mantém justificado mesmo no mobile */
+    }
+
     .sobre-imagem img {
-        width: 70%;
+        max-width: 70%;
         margin-top: 20px;
     }
 }
+
 
 
