@@ -91,7 +91,7 @@ nav.menu a.btn-nav {
     }
 }
 /* SEÇÃO SOBRE – CAIXA ESTILIZADA */
-#sobremim {
+#sobre {
     max-width: 600px;
     margin: 10px;
     padding: 10px;
@@ -108,7 +108,7 @@ nav.menu a.btn-nav {
 }
 
 /* TÍTULO DA SEÇÃO (se quiser usar depois) */
-#sobremim h2 {
+#sobre h2 {
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: 800;
@@ -117,7 +117,7 @@ nav.menu a.btn-nav {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    #sobremim {
+    #sobre {
         margin: 30px 15px;
         padding: 25px;
         font-size: 17px;
