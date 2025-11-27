@@ -90,3 +90,35 @@ nav.menu a.btn-nav {
         text-align: center;
     }
 }
+/* SEÇÃO SOBRE – CAIXA ESTILIZADA */
+#sobre {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.72); /* branco translúcido */
+    backdrop-filter: blur(4px);            /* efeito vidro */
+    border-radius: 18px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+    line-height: 1.7;
+    color: #4a2b4a;   /* tom escuro da sua paleta */
+    font-family: "Montserrat", sans-serif;
+}
+
+/* TÍTULO DA SEÇÃO (se quiser usar depois) */
+#sobre h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #5a2b5a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sobre {
+        margin: 30px 15px;
+        padding: 25px;
+        font-size: 17px;
+    }
+}
+
