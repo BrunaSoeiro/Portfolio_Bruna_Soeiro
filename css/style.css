@@ -121,8 +121,7 @@ nav.menu a.btn-nav {
         font-size: 17px;
     }
 }
-/* ---- LAYOUT DO SOBRE EM DUAS COLUNAS ---- */
-/* 🔹 Container em duas colunas */
+/* CONTAINER LADO A LADO */
 .sobre-container {
     display: flex;
     align-items: center;
@@ -130,31 +129,32 @@ nav.menu a.btn-nav {
     gap: 40px;
 }
 
-/* 🔹 Texto ocupa mais espaço */
+/* TEXTO */
 .sobre-texto {
     flex: 2;
 }
 
-/* 🔹 Imagem */
-.sobre-img img {
+/* IMAGEM DO LADO */
+.sobre-imagem img {
     width: 350px;
     max-width: 100%;
     height: auto;
-    display: block;
-    border: none;      /* remove qualquer borda */
-    box-shadow: none;  /* garante que nada apareça */
-    border-radius: 0;  /* sem arredondamento */
+    border: none;
+    box-shadow: none; /* tira qualquer sombra */
+    border-radius: 0; /* garante que fique totalmente limpa */
 }
 
-@media (max-width: 768px) {
+/* RESPONSIVIDADE — EMPILHAR NO CELULAR */
+@media (max-width: 900px) {
     .sobre-container {
         flex-direction: column;
         text-align: center;
     }
-    
-    .sobre-img {
-        max-width: 280px;
+
+    .sobre-imagem img {
+        width: 70%;
+        margin-top: 20px;
     }
 }
-/*
+
 
