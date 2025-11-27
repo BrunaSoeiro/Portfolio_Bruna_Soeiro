@@ -131,14 +131,20 @@ nav.menu a.btn-nav {
 
 /* Caixa de texto */
 .sobre-texto {
-    flex: 1;
+    flex: 2;
 }
 
-/* Imagem */
-.sobre-img img {
-    width: 530px;
-    height: auto;
-    object-fit: cover;
+.sobre-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-img {
+    width: 100%;
+    max-width: 330px;
+    border: none;
+    box-shadow: none;
 }
 
 /* ---- RESPONSIVIDADE ---- */
