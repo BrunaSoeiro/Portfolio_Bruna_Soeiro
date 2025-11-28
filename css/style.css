@@ -67,7 +67,10 @@ nav.menu a.btn-nav {
 }
 
 .sobre-imagem img {
-    width: 900px;
+    max-width: 900px; /* tamanho máximo que você quer */
+    width: 100%;      /* permite que ela reduza conforme o container/tela */
+    height: auto;     /* mantém a proporção */
+    display: block;   /* evita pequenos espaços extras */
 }
 
 .sobre-container {
