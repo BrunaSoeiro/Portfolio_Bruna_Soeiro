@@ -50,34 +50,31 @@ nav.menu a.btn-nav {
     transform: scale(1.05);    /* dá zoom suave */
 }
 
-#sobre {
+.sobre-texto {
+    width: 500px;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #4a2b4a;                       /* roxo escuro */
+    line-height: 1.7;                     /* espaçamento entre linhas */
     max-width: 600px;                     /* largura máxima da caixa */
-    margin: 100px 300px;                         /* espaçamento externo */
     padding: 20px;                        /* espaçamento interno */
     background: rgba(255, 255, 255, 0.72);/* fundo branco translúcido */
     backdrop-filter: blur(4px);           /* efeito vidro */
     border-radius: 18px;                  /* bordas arredondadas */
     box-shadow: 0 6px 30px rgba(0,0,0,0.15); /* leve sombra */
-    line-height: 1.7;                     /* espaçamento entre linhas */
-    color: #4a2b4a;                       /* roxo escuro */
-}
-
-.sobre-texto {
-    width: 500px;
-    text-align: justify;
-    font-size: 1.2em;
-}
-
-.sobre-container {
-    display: flex;              /* coloca texto e imagem lado a lado */
-    align-items: center;        /* alinha verticalmente */
-    padding: 10px 60px;            /* espaçamento vertical da seção */
-    width: 100%;
-    gap: 50px;
+    margin: auto;
+    align-items: center;
 }
 
 .sobre-imagem img {
     width: 900px;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: center;  /* centraliza horizontalmente */
+    align-items: center;      /* centraliza verticalmente */
+    gap: 40px;                /* espaço entre texto e imagem */
 }
 
 #projetos {
