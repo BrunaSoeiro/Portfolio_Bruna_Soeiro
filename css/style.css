@@ -67,16 +67,8 @@ nav.menu a.btn-nav {
     align-items: center;
 }
 .sobre-texto h1 {
-    width: 100%;
-    max-width: 600px;  /* limite no desktop */
-    min-width: 50px;
-    margin: 20px auto;
     font-family: highest-praise, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #ccff66;                      
-    line-height: 1.7;                  
-    align-items: center;
+    color: #ccff66;                                      
 }
 .sobre-imagem img {
     max-width: 600px; /* tamanho máximo que você quer */
