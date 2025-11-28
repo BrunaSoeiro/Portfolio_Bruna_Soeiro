@@ -31,7 +31,8 @@ html, body {
 }
 
 nav.menu a.btn-nav {
-    padding: 10px 80px 30px 80px;            /* tamanho do botão */
+    padding: 10px 80px;            /* tamanho do botão */
+    margin: 20px;
     background-color: #513a77;     /* roxo escuro */
     color: white;                  /* texto branco */
     text-decoration: none;         /* remove sublinhado */
