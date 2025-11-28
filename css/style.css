@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 body {
     background-color: #cca1cc; /* cor de fundo da página */
     margin: 0;                 /* remove margens padrão */
@@ -68,7 +68,9 @@ nav.menu a.btn-nav {
     align-items: center;
 }
 .sobre-texto h1 {
-    font-family: highest-praise, sans-serif;
+    font-family: "Gochi Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
     color: #ccff66;                                      
 }
 .sobre-imagem img {
