@@ -54,7 +54,8 @@ nav.menu a.btn-nav {
 
 #sobre {
     background-color: #cca1cc;
-    margin: auto;
+    margin: 40px auto;
+    
 }
 .sobre-texto p {
     width: 100%;
