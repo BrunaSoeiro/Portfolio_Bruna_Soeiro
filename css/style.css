@@ -32,8 +32,9 @@ html, body {
 nav.menu a.btn-nav {
     padding: 10px 80px;            /* tamanho do botão */
     margin: 20px;
+    align-items: center;           /* centraliza verticalmente */
     background-color: #3F6152;     /* roxo escuro */
-    color: #E0C792;                  /* texto branco */
+    color: #E0C792;                /* texto branco */
     text-decoration: none;         /* remove sublinhado */
     font-size: 18px;               /* tamanho da fonte */
     font-weight: bold;             /* deixa em negrito */
