@@ -1,6 +1,3 @@
-/* ------------------------------------------------------------- */
-/* 🌸 FUNDO GERAL DA PÁGINA */
-/* ------------------------------------------------------------- */
 
 body {
     background-color: #cca1cc; /* cor de fundo da página */
@@ -13,69 +10,19 @@ html, body {
     overflow-x: hidden;        /* evita barra de rolagem horizontal */
 }
 
-/* ------------------------------------------------------------- */
-/* 🌟 HERO (a seção do topo com imagem grande) */
-/* ------------------------------------------------------------- */
-
 .hero {
     width: 100%;                                  /* ocupa 100% da largura */
     background-image: url('images/fundo2.png');   /* imagem de fundo */
     background-size: contain;                     /* mostra a imagem inteira sem cortar */
     background-position: center top;              /* centraliza horizontalmente e alinha no topo */
     background-repeat: no-repeat;                 /* evita que repita */
-    background-color: #cca1cc;                    /* cor atrás da imagem */
+    background-color: #4a2b4a;                    /* cor atrás da imagem */
 
     aspect-ratio: 1920 / 850;                     /* mantém proporção da imagem original */
 }
 
-/* ------------------------------------------------------------- */
-/* ------------------------------------------------------------- */
-
-@media (min-width: 1600px) {
-    .hero {
-        background-size: contain;
-        background-position: center top;
-    }
-}
-
-/* ------------------------------------------------------------- */
-/* 🖥️ MONITORES GRANDES */
-/* ------------------------------------------------------------- */
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-    .hero {
-        background-size: contain;
-        background-position: center top;
-    }
-}
-
-/* ------------------------------------------------------------- */
-/* 💻 NOTEBOOKS / TELAS MÉDIAS */
-/* ------------------------------------------------------------- */
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .hero {
-        background-size: contain;
-        background-position: top center;
-    }
-}
-
-/* ------------------------------------------------------------- */
-/* 📱 CELULARES */
-/* ------------------------------------------------------------- */
-
-@media (max-width: 767px) {
-    .hero {
-        background-size: contain;  /* garante que a imagem inteira apareça */
-        background-position: top center;
-    }
-}
-
-/* ------------------------------------------------------------- */
-/* 🌸 MENU DE NAVEGAÇÃO */
-/* ------------------------------------------------------------- */
-
 .menu {
+    background-color: #b27db2;
     display: flex;             /* deixa os itens lado a lado */
     justify-content: center;   /* centraliza horizontalmente */
     gap: 60px;                 /* espaçamento entre botões */
@@ -83,13 +30,9 @@ html, body {
     flex-wrap: wrap;           /* permite quebrar linha no celular */
 }
 
-/* ------------------------------------------------------------- */
-/* 🔘 BOTÕES DO MENU */
-/* ------------------------------------------------------------- */
-
 nav.menu a.btn-nav {
     padding: 12px 25px;            /* tamanho do botão */
-    background-color: #b27db2;     /* roxo escuro */
+    background-color: #513a77;     /* roxo escuro */
     color: white;                  /* texto branco */
     text-decoration: none;         /* remove sublinhado */
     font-size: 18px;               /* tamanho da fonte */
@@ -102,62 +45,56 @@ nav.menu a.btn-nav {
 /* HOVER = quando passa o mouse */
 .btn-nav:hover {
     background-color: #cca1cc; /* muda para o roxo claro */
-    color: #5a2b5a;            /* texto escuro para contraste */
-    border-color: #5a2b5a;     /* borda aparece */
+    color: #513a77;            /* texto escuro para contraste */
+    border-color: #513a77;     /* borda aparece */
     transform: scale(1.05);    /* dá zoom suave */
 }
 
-/* ------------------------------------------------------------- */
-/* 📱 BOTÕES RESPONSIVOS NO CELULAR */
-/* ------------------------------------------------------------- */
-
-@media (max-width: 767px) {
-    .btn-nav {
-        width: 45%;           /* dois botões por linha */
-        text-align: center;   /* centraliza texto */
-    }
-}
-
-/* ------------------------------------------------------------- */
-/* 💜 SEÇÃO “SOBRE” (caixa com texto) */
-/* ------------------------------------------------------------- */
-
 #sobre {
     max-width: 600px;                     /* largura máxima da caixa */
-    margin: 0 300px;                         /* espaçamento externo */
+    margin: 100px 300px;                         /* espaçamento externo */
     padding: 20px;                        /* espaçamento interno */
     background: rgba(255, 255, 255, 0.72);/* fundo branco translúcido */
     backdrop-filter: blur(4px);           /* efeito vidro */
     border-radius: 18px;                  /* bordas arredondadas */
     box-shadow: 0 6px 30px rgba(0,0,0,0.15); /* leve sombra */
-    font-size: 18px;                      /* tamanho do texto */
     line-height: 1.7;                     /* espaçamento entre linhas */
     color: #4a2b4a;                       /* roxo escuro */
-    font-family: "Montserrat", sans-serif;
-    
-    
 }
 
-/* ------------------------------------------------------------- */
-/* 📦 LAYOUT DA SEÇÃO SOBRE (texto + imagem lado a lado) */
-/* ------------------------------------------------------------- */
+.sobre-texto {
+    width: 500px;
+    text-align: justify;
+    font-size: 1.2em;
+}
 
 .sobre-container {
     display: flex;              /* coloca texto e imagem lado a lado */
     align-items: center;        /* alinha verticalmente */
     padding: 10px 60px;            /* espaçamento vertical da seção */
     width: 100%;
-    gap: 650px;
+    gap: 50px;
 }
 
-/* Tamanho da imagem */
 .sobre-imagem img {
     width: 900px;
 }
 
-/* ------------------------------------------------------------- */
-/* 📱 RESPONSIVIDADE — SEÇÃO SOBRE */
-/* ------------------------------------------------------------- */
+#projetos {
+    background-color: #b27db2;
+    height: 1000px;
+}
+
+#cursos {
+    background-color: #cca1cc;
+    height: 1000px;
+}
+
+#contato {
+    background-color: #b27db2;
+    height: 1000px;
+}
+
 
 @media (max-width: 768px) {
     #sobre {
@@ -185,6 +122,37 @@ nav.menu a.btn-nav {
     }
 }
 
-/* ------------------------------------------------------------- */
-/* ⚠️ OBS: havia um } sobrando no seu código original → removido */
-/* ------------------------------------------------------------- */
+
+@media (min-width: 1600px) {
+    .hero {
+        background-size: contain;
+        background-position: center top;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .hero {
+        background-size: contain;
+        background-position: center top;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+        background-size: contain;
+        background-position: top center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        background-size: contain;  /* garante que a imagem inteira apareça */
+        background-position: top center;
+    }
+}
+@media (max-width: 767px) {
+    .btn-nav {
+        width: 45%;           /* dois botões por linha */
+        text-align: center;   /* centraliza texto */
+    }
+}
