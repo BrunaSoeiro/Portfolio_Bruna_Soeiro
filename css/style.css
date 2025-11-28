@@ -12,7 +12,7 @@ html, body {
 
 .hero {
     width: 100%;                                  /* ocupa 100% da largura */
-    background-image: url('images/fundo.png');   /* imagem de fundo */
+    background-image: url('images/fundo3.png');   /* imagem de fundo */
     background-size: contain;                     /* mostra a imagem inteira sem cortar */
     background-position: center top;              /* centraliza horizontalmente e alinha no topo */
     background-repeat: no-repeat;                 /* evita que repita */
