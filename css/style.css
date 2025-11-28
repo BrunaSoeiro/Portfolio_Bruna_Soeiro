@@ -25,13 +25,13 @@ html, body {
     background-color: #b27db2;
     display: flex;             /* deixa os itens lado a lado */
     justify-content: center;   /* centraliza horizontalmente */
-    gap: 60px;                 /* espaçamento entre botões */
+    gap: 100px;                 /* espaçamento entre botões */
     padding: 20px 0;           /* espaçamento vertical */
     flex-wrap: wrap;           /* permite quebrar linha no celular */
 }
 
 nav.menu a.btn-nav {
-    padding: 12px 25px;            /* tamanho do botão */
+    padding: 10px 80px;            /* tamanho do botão */
     background-color: #513a77;     /* roxo escuro */
     color: white;                  /* texto branco */
     text-decoration: none;         /* remove sublinhado */
@@ -75,6 +75,7 @@ nav.menu a.btn-nav {
     justify-content: center;  /* centraliza horizontalmente */
     align-items: center;      /* centraliza verticalmente */
     gap: 40px;                /* espaço entre texto e imagem */
+    flex-wrap: wrap;
 }
 
 #projetos {
