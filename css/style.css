@@ -55,7 +55,7 @@ nav.menu a.btn-nav {
     background-color: #cca1cc;
     height: 1500px;
 }
-.sobre-texto {
+.sobre-texto p {
     width: 100%;
     max-width: 600px;  /* limite no desktop */
     min-width: 50px;
@@ -66,7 +66,17 @@ nav.menu a.btn-nav {
     line-height: 1.7;                  
     align-items: center;
 }
-
+.sobre-texto h1 {
+    width: 100%;
+    max-width: 600px;  /* limite no desktop */
+    min-width: 50px;
+    margin: 20px auto;
+    text-align: justify;
+    font-size: 2em;
+    color: #48ff68;                      
+    line-height: 1.7;                  
+    align-items: center;
+}
 .sobre-imagem img {
     max-width: 600px; /* tamanho máximo que você quer */
     width: 100%;      /* permite que ela reduza conforme o container/tela */
