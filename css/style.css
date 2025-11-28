@@ -52,12 +52,13 @@ nav.menu a.btn-nav {
 }
 
 .sobre-texto {
-    width: 500px;
+    width: 100%;
+    max-width: 600px;  /* limite no desktop */
+    box-sizing: border-box; /* impede que o padding aumente a largura */
     text-align: justify;
     font-size: 1.2em;
     color: #4a2b4a;                       /* roxo escuro */
     line-height: 1.7;                     /* espaçamento entre linhas */
-    max-width: 600px;                     /* largura máxima da caixa */
     padding: 20px;                        /* espaçamento interno */
     background: rgba(255, 255, 255, 0.72);/* fundo branco translúcido */
     backdrop-filter: blur(4px);           /* efeito vidro */
