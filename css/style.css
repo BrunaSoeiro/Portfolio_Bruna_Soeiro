@@ -59,17 +59,17 @@ nav.menu a.btn-nav {
     font-size: 1.2em;
     color: #4a2b4a;                       /* roxo escuro */
     line-height: 1.7;                     /* espaçamento entre linhas */
-    padding: 20px;                        /* espaçamento interno */
+    padding: 20px 20px 20px 20px;         /* espaçamento interno */
     background: rgba(255, 255, 255, 0.72);/* fundo branco translúcido */
     backdrop-filter: blur(4px);           /* efeito vidro */
     border-radius: 18px;                  /* bordas arredondadas */
     box-shadow: 0 6px 30px rgba(0,0,0,0.15); /* leve sombra */
-    margin: auto;
+    margin: 20px auto;
     align-items: center;
 }
 
 .sobre-imagem img {
-    max-width: 900px; /* tamanho máximo que você quer */
+    max-width: 800px; /* tamanho máximo que você quer */
     width: 100%;      /* permite que ela reduza conforme o container/tela */
     height: auto;     /* mantém a proporção */
     display: block;   /* evita pequenos espaços extras */
