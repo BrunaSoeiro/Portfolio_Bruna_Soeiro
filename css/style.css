@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Molle&family=Mr+Dafoe&display=swap');
 body {
-    background-color: #cca1cc; /* cor de fundo da página */
+    background-color: #84728B; /* cor de fundo da página */
     margin: 0;                 /* remove margens padrão */
     padding: 0;                /* remove espaçamentos padrão */
 }
@@ -69,8 +68,9 @@ nav.menu a.btn-nav {
 }
 .sobre-texto h1 {
     font-family: "Gochi Hand", cursive;
-    font-size: 2em;
+    font-weight: 400;
     font-style: normal;
+    font-size: 2em;
     color: #CA92E0;                                      
 }
 .sobre-imagem img {
