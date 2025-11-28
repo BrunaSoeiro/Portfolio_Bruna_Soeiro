@@ -71,8 +71,9 @@ nav.menu a.btn-nav {
     max-width: 600px;  /* limite no desktop */
     min-width: 50px;
     margin: 20px auto;
-    text-align: justify;
-    font-size: 2em;
+    font-family: highest-praise, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: #48ff68;                      
     line-height: 1.7;                  
     align-items: center;
