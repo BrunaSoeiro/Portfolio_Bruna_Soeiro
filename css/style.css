@@ -51,6 +51,10 @@ nav.menu a.btn-nav {
     transform: scale(1.05);    /* dá zoom suave */
 }
 
+#sobre {
+    background-color: #cca1cc;
+    height: 1500px;
+}
 .sobre-texto {
     width: 100%;
     max-width: 600px;  /* limite no desktop */
