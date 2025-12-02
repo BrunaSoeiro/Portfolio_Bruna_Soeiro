@@ -147,7 +147,11 @@ nav.menu a.btn-nav {
     transform: scale(1.15);
 }
 
-/* OVERLAY ESCURO */
+/* ------------------------------------------------------------- */
+/* POPUP – CORRIGIDO E RESPONSIVO */
+/* ------------------------------------------------------------- */
+
+/* overlay (fundo escuro) */
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -155,38 +159,30 @@ nav.menu a.btn-nav {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
-    display: none; 
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 10000;
-    backdrop-filter: blur(6px); 
+    backdrop-filter: blur(6px);
+    padding: 20px; /* evita encostar nas bordas no celular */
 }
 
-/* CAIXA DO POPUP */
+/* janela do popup */
 .popup {
     background: #baa5c2;
-    width: 25vw;                    
-    height: 35vh;                   
+    width: 100%;
+    max-width: 450px;   /* limite bonito no computador */
     border-radius: 18px;
     padding: 30px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
     box-shadow: 0px 8px 25px rgba(0,0,0,0.25);
     position: relative;
     animation: popupShow .25s ease-out;
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
-/* ANIMAÇÃO */
-@keyframes popupShow {
-    from { transform: scale(.8); opacity: 0; }
-    to   { transform: scale(1); opacity: 1; }
-}
-
-/* BOTÃO FECHAR */
+/* botão fechar */
 .close-btn {
     position: absolute;
     top: 12px;
@@ -202,15 +198,15 @@ nav.menu a.btn-nav {
     transform: scale(1.2);
 }
 
-/* TÍTULO */
+/* título */
 .popup h2 {
     font-size: 1.8rem;
-    margin: 0 0 10px 0;
     color: #3F6152;
     text-align: center;
+    margin: 0 0 15px;
 }
 
-/* INPUTS DO FORMULÁRIO */
+/* campos */
 .popup input,
 .popup textarea {
     width: 100%;
@@ -218,31 +214,23 @@ nav.menu a.btn-nav {
     border-radius: 10px;
     border: 2px solid #ccc;
     font-size: 1rem;
-    resize: none;
     outline: none;
+    resize: none;
     transition: border .2s ease;
 }
 
-/* EFEITO AO CLICAR NO CAMPO */
+/* foco nos campos */
 .popup input:focus,
 .popup textarea:focus {
     border-color: #3F6152;
 }
 
-/* AUMENTANDO TAMANHO DOS CAMPOS */
-.popup input {
-    height: 32px;      /* antes era 45px → agora ficou mais fino */
-    padding: 8px 10px;
-    font-size: 0.95rem;
-}
-
 .popup textarea {
-    height: 90px;                      /* ficou bem mais adequado */
+    height: 120px; 
 }
 
-/* BOTÃO DE ENVIAR */
+/* botão enviar */
 .popup button {
-    margin-top: 15px;
     background: #3F6152;
     color: #E0C792;
     padding: 12px;
@@ -260,37 +248,30 @@ nav.menu a.btn-nav {
     transform: scale(1.05);
 }
 
-/* RESPONSIVO */
-@media (max-width: 700px) {
-    .popup {
-        width: 90vw;
-        height: auto;
-        padding: 20px;
-    }
-
-    .popup textarea {
-        height: 120px;
-    }
-}
-
-
+/* ------------------------------------------------------------- */
 /* RESPONSIVIDADE */
+/* ------------------------------------------------------------- */
+
 @media (max-width: 700px) {
     .popup {
-        width: 90vw;
-        height: auto;
         padding: 25px;
     }
 
     .popup h2 {
         font-size: 1.6rem;
     }
+}
 
-    .popup p {
-        font-size: 1rem;
+@media (max-width: 500px) {
+    .popup {
+        padding: 20px;
+        max-width: 90vw;
+    }
+
+    .popup textarea {
+        height: 140px;
     }
 }
- ------------------------------------------------------------- */
 
 @media (max-width: 850px) {
 
