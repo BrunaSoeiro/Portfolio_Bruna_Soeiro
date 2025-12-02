@@ -29,7 +29,7 @@ html, body {
     background-position: center top;
     background-repeat: no-repeat;
     background-color: #84728B;
-    aspect-ratio: 1920 / 850;
+    aspect-ratio: 1920 / 800;
     scroll-snap-align: start;
 }
 
