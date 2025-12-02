@@ -126,7 +126,7 @@ nav.menu a.btn-nav {
 #cursos   { background-color: #3F6152; }
 #contato  { background-color: #84728B; }
 
-/* BOTÃO FIXO DO EMAIL */
+/* BOTÃO FIXO DOS PONTOS */
 .pontos-fixed {
     position: fixed;
     top: 30px;
@@ -138,7 +138,7 @@ nav.menu a.btn-nav {
 }
 
 .pontos-fixed img {
-    width: 50px;
+    width: 90px;
     height: auto;
     transition: transform .2s ease;
 }
