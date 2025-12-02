@@ -308,14 +308,13 @@ nav.menu a.btn-nav {
     }
 }
 
-/* popup no celular */
+
 @media (max-width: 600px) {
     .popup {
-        width: 80vw;
-        height: auto;
-        padding: 30px;
+        width: 80vw !important;   /* mais largo no celular */
+        height: auto !important;  /* ajusta automaticamente */
+        padding: 25px;
     }
-}
 
 /* hero responsivo */
 @media (max-width: 767px) {
