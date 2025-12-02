@@ -42,7 +42,6 @@ html, body {
     display: flex;
     justify-content: center;
     gap: 100px;
-    padding: 0 0 20px 0;
     flex-wrap: wrap;
 }
 
