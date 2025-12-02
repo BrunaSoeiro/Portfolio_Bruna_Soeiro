@@ -130,7 +130,7 @@ nav.menu a.btn-nav {
 .pontos-fixed {
     position: fixed;
     top: 30px;
-    right: 30px;
+    right: 20px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -156,7 +156,7 @@ nav.menu a.btn-nav {
 }
 
 .email-fixed img {
-    width: 50px;
+    width: 40px;
     transition: transform .2s ease;
 }
 
