@@ -130,10 +130,9 @@ nav.menu a.btn-nav {
 .pontos-fixed {
     position: fixed;
     top: 30px;
-    right: 20px;
+    right: 15px;
     background: transparent;
     border: none;
-    cursor: pointer;
     z-index: 9999;
 }
 
