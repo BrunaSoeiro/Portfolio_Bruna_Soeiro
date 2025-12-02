@@ -126,10 +126,10 @@ nav.menu a.btn-nav {
 #cursos   { background-color: #3F6152; }
 #contato  { background-color: #84728B; }
 
-/* BOTÃO FIXO DO EMAIL 
-.email-fixed {
+/* BOTÃO FIXO DO EMAIL */
+.pontos-fixed {
     position: fixed;
-    bottom: 30px;
+    top: 30px;
     right: 30px;
     background: transparent;
     border: none;
@@ -137,10 +137,11 @@ nav.menu a.btn-nav {
     z-index: 9999;
 }
 
-.email-fixed img {
+.pontos-fixed img {
     width: 50px;
+    height: auto;
     transition: transform .2s ease;
-}*/
+}
 
 
 /* BOTÃO FIXO DO EMAIL */
