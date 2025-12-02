@@ -167,6 +167,7 @@ nav.menu a.btn-nav {
     padding: 20px; /* evita encostar nas bordas no celular */
     overflow-y: auto; /* ESSENCIAL! */
     inset: 0; /* garante que pega a tela toda, ignorando margens externas */
+    min-height: 100vh;     /* força vertical REAL */
 }
 
 /* janela do popup */
