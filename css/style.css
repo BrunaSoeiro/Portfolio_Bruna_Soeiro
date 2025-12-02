@@ -41,13 +41,13 @@ html, body {
     background-color: #84728B;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
 nav.menu a.btn-nav {
     padding: 10px 80px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     background-color: #3F6152;
     color: #E0C792;
     text-decoration: none;
