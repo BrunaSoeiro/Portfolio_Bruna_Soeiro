@@ -119,18 +119,19 @@ nav.menu a.btn-nav {
  }
  .galeria {
     display: grid;
-    grid-template-columns: auto 1fr 1fr; /* vertical à esquerda, 2 colunas à direita */
+    grid-template-columns: auto repeat(4, 1fr); /* 1 coluna + 4 colunas */
+    grid-auto-rows: auto;
     gap: 20px; /* espaço entre os itens */
     justify-items: center; /* centraliza cada item */
     align-items: center;      /* centraliza na vertical */
     margin-top: 20px;
 }
 .vertical {
-    grid-row: span 2;
-    align-self: center; /* <- AQUI É A MAGIA */
+    grid-row: span 2;     /* ocupa as 2 linhas das fotos */
+    align-self: center;   /* CENTRALIZA na altura total */
 }
 .vertical img {
-    height: 100px;  
+    height: 300px;  
     width: auto;
 }
 .item {
