@@ -118,7 +118,8 @@ nav.menu a.btn-nav {
 }
 
 .galeria { 
-    display: grid; grid-template-columns: repeat(4, 1fr); /* 4 colunas */ 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */ 
     gap: 40px; /* espaço entre os itens */ 
     justify-items: center; /* centraliza cada item */ 
     align-items: center; /* centraliza na vertical */ 
