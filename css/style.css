@@ -136,39 +136,32 @@ nav.menu a.btn-nav {
 
 /* ------- GALERIA ORGANIZADA E CORRIGIDA ------- */
 
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    justify-items: center;
-    align-items: start;  /* impede desalinhamento */
-}
-
-.item {
-    width: 100%;
-    max-width: 220px;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    height: 260px; /* força todos iguais */
-}
-
-.item img {
-    width: 100%;
-    height: 180px; /* deixa todas iguais */
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.titulo {
-    margin-top: 8px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #333;
-}
+#projetos { 
+    height: 92vh; 
+    width: 100%; 
+    scroll-snap-align: start; 
+    background-color: #84728B; 
+} 
+.galeria { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */ 
+    gap: 40px; /* espaço entre os itens */ 
+    justify-items: center; /* centraliza cada item */ 
+    align-items: center; /* centraliza na vertical */ 
+    margin-top: 20px; 
+} 
+.item { 
+    text-align: center; /* título centralizado */ 
+    width: 200px; } 
+.item img { 
+    width: 100%; 
+    border-radius: 10px; /* opcional: cantos arredondados */ 
+} 
+.titulo { 
+    margin-top: 8px; 
+    font-size: 1.1em; 
+    font-weight: bold; 
+    color: #333; }
 
 /* ------------------------------------------------------------- */
 /* CURSOS */
