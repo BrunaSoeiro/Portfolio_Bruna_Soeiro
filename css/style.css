@@ -74,7 +74,12 @@ nav.menu a.btn-nav {
     width: 100%;
     scroll-snap-align: start;
 }
-
+.sobre-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .sobre-texto p {
     max-width: 600px;
     width: 100%;
@@ -99,13 +104,6 @@ nav.menu a.btn-nav {
     border-radius: 10px;
 }
 
-.sobre-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 /* ------------------------------------------------------------- */
 /* PROJETOS */
 /* ------------------------------------------------------------- */
@@ -115,21 +113,25 @@ nav.menu a.btn-nav {
     width: 100%;
     scroll-snap-align: start;
     background-color: #84728B;
-    justify-items: center; 
-    align-items: center; /* centraliza na vertical */
 }
+
 .galeria { 
     display: grid; 
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas */ 
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 .item { 
     text-align: center; /* título centralizado */ 
     width: 200px; 
 } 
+
 .item img { 
     width: 100%; 
     border-radius: 10px; /* opcional: cantos arredondados */ 
 } 
+
 .titulo { 
     margin-top: 8px; 
     font-size: 1.1em; 
