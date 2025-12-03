@@ -150,10 +150,9 @@ nav.menu a.btn-nav {
 .galeria { 
     display: grid; 
     grid-template-columns: repeat(4, 1fr); /* 4 colunas */ 
-    gap: 40px; /* espaço entre os itens */ 
-    justify-items: center; /* centraliza cada item */ 
-    align-items: center; /* centraliza na vertical */ 
-    margin-top: 20px; 
+    gap: 20px; /* espaço entre os itens */ 
+    justify-items: espace-evenly; /* centraliza cada item */ 
+    align-items: center; /* centraliza na vertical */
 } 
 .item { 
     text-align: center; /* título centralizado */ 
@@ -348,6 +347,13 @@ nav.menu a.btn-nav {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 500px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @media (max-width: 767px) {
     .hero {
