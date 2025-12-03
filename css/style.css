@@ -115,13 +115,48 @@ nav.menu a.btn-nav {
 /* OUTRAS SEÇÕES */
 /* ------------------------------------------------------------- */
 
-#projetos, #cursos, #contato {
+#cursos, #contato {
     height: 95vh;
     width: 100%;
     scroll-snap-align: start;
 }
 
-#projetos { background-color: #84728B; }
+#projetos { 
+    height: 95vh;
+    width: 100%;
+    scroll-snap-align: start;
+    background-color: #84728B;
+    display: flex;
+    justify-content: center;  /* centraliza na horizontal */
+    align-items: center;      /* centraliza na vertical */
+    flex-direction: column;   /* mantém conteúdo em coluna */
+ }
+ .galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;          /* espaçamento entre os itens */
+    flex-wrap: wrap;    /* permite quebrar para próxima linha no celular */
+    margin-top: 20px;
+}
+
+.item {
+    text-align: center; /* título centralizado */
+    width: 250px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px; /* opcional: cantos arredondados */
+}
+
+.titulo {
+    margin-top: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
 #cursos   { background-color: #3F6152; }
 #contato  { background-color: #84728B; }
 
@@ -267,6 +302,9 @@ nav.menu a.btn-nav {
     color: #3F6152;
     transform: scale(1.05);
 }
+
+
+
 
 /* ------------------------------------------------------------- */
 /* RESPONSIVIDADE */
