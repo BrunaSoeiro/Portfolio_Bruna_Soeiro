@@ -131,7 +131,7 @@ nav.menu a.btn-nav {
     align-self: center;   /* CENTRALIZA na altura total */
 }
 .vertical img {
-    height: 300px;  
+    height: auto;  
     width: auto;
 }
 .item {
