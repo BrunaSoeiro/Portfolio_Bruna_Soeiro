@@ -124,7 +124,7 @@ nav.menu a.btn-nav {
  }
  .galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
     gap: 40px; /* espaço entre os itens */
     justify-items: center; /* centraliza cada item */
     margin-top: 20px;
