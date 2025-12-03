@@ -141,13 +141,23 @@ nav.menu a.btn-nav {
 }
 
 .item {
-    text-align: center; /* título centralizado */
-    width: 200px;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    /* garante altura igual em TODAS as células */
+    height: 260px;
 }
 
 .item img {
     width: 100%;
-    border-radius: 10px; /* opcional: cantos arredondados */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .titulo {
