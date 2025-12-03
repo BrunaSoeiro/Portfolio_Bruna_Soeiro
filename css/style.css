@@ -119,20 +119,25 @@ nav.menu a.btn-nav {
  }
  .galeria {
     display: grid;
-    grid-template-columns: auto repeat(4, 1fr); /* 1 coluna + 4 colunas */
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
     justify-items: space-evenly; /* centraliza cada item */
     align-items: center;      /* centraliza na vertical */
 }
+.projetos-wrapper {
+    display: grid;
+    grid-template-columns: 120px 1fr; /* título + galeria */
+    align-items: center; /* CENTRALIZA VERTICAL */
+    gap: 30px;
+    padding-left: 40px;
+}
 .titulo-vertical {
-    writing-mode: vertical-rl;  /* texto vertical */
-    transform: rotate(180deg);  /* deixa leitura normal de cima pra baixo */
-    font-size: 2.2rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2rem;
     font-weight: bold;
     color: #E0C792;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .item {
