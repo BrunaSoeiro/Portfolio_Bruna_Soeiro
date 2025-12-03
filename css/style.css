@@ -119,7 +119,7 @@ nav.menu a.btn-nav {
 .galeria { 
     display: grid; 
     grid-template-columns: repeat(4, 1fr); /* 4 colunas */ 
-    justify-content: center; 
+    justify-items: center; 
     align-items: center; /* centraliza na vertical */
 }
 .item { 
