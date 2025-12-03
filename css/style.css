@@ -124,14 +124,17 @@ nav.menu a.btn-nav {
     justify-items: space-evenly; /* centraliza cada item */
     align-items: center;      /* centraliza na vertical */
 }
-.vertical {
-    grid-row: span 2;     /* ocupa as 2 linhas das fotos */
-    align-self: center;   /* CENTRALIZA na altura total */
+.titulo-vertical {
+    writing-mode: vertical-rl;  /* texto vertical */
+    transform: rotate(180deg);  /* deixa leitura normal de cima pra baixo */
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #E0C792;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.vertical img {
-    height: 300px;  
-    width: 100px;
-}
+
 .item {
     text-align: center; /* título centralizado */
     width: 200px;
