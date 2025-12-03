@@ -130,7 +130,7 @@ nav.menu a.btn-nav {
     align-self: center; /* <- AQUI É A MAGIA */
 }
 .vertical img {
-    height: auto;  
+    height: 100px;  
     width: auto;
 }
 .item {
