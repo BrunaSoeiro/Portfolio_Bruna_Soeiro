@@ -117,21 +117,26 @@ nav.menu a.btn-nav {
     background-color: #84728B;
 }
 
-.projetos-wrapper {
-    display: grid;
-    grid-template-columns: 120px 1fr; 
-    align-items: center;
-    gap: 30px;
-    padding-left: 40px;
-}
+.galeria { 
+    display: grid; grid-template-columns: repeat(4, 1fr); /* 4 colunas */ 
+    gap: 40px; /* espaço entre os itens */ 
+    justify-items: center; /* centraliza cada item */ 
+    align-items: center; /* centraliza na vertical */ 
+    margin-top: 20px; }
 
-.titulo-vertical {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 2rem;
-    font-weight: bold;
-    color: #E0C792;
-    text-align: center;
+.item { 
+    text-align: center; /* título centralizado */ 
+    width: 200px; 
+} 
+.item img { 
+    width: 100%; 
+    border-radius: 10px; /* opcional: cantos arredondados */ 
+} 
+.titulo { 
+    margin-top: 8px; 
+    font-size: 1.1em; 
+    font-weight: bold; 
+    color: #333; 
 }
 
 /* ------- GALERIA ORGANIZADA E CORRIGIDA ------- */
