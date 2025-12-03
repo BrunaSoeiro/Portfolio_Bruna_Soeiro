@@ -110,15 +110,10 @@ nav.menu a.btn-nav {
     flex-wrap: wrap;
 }
 
-/* ------------------------------------------------------------- */
-/* OUTRAS SEÇÕES */
-/* ------------------------------------------------------------- */
 
-#cursos, #contato {
-    height: 95vh;
-    width: 100%;
-    scroll-snap-align: start;
-}
+/* ------------------------------------------------------------- */
+/* PROJETOS */
+/* ------------------------------------------------------------- */
 
 #projetos { 
     height: 95vh;
@@ -155,8 +150,30 @@ nav.menu a.btn-nav {
     color: #333;
 }
 
-#cursos   { background-color: #3F6152; }
-#contato  { background-color: #84728B; }
+
+/* ------------------------------------------------------------- */
+/* CURSOS */
+/* ------------------------------------------------------------- */
+
+#cursos   { 
+    background-color: #3F6152; 
+    height: 95vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+
+/* ------------------------------------------------------------- */
+/* CONTATO */
+/* ------------------------------------------------------------- */
+
+#contato  { 
+    background-color: #3F6152; 
+    height: 95vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
 
 /* BOTÃO FIXO DOS PONTOS */
 .pontos-fixed {
