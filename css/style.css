@@ -7,7 +7,7 @@
 body {
     background-color: #84728B;
     margin: 0 !important;
-    padding: 0 !important;;
+    padding: 0 !important;
 }
 
 html, body {
@@ -106,7 +106,6 @@ nav.menu a.btn-nav {
     flex-wrap: wrap;
 }
 
-
 /* ------------------------------------------------------------- */
 /* PROJETOS */
 /* ------------------------------------------------------------- */
@@ -116,21 +115,16 @@ nav.menu a.btn-nav {
     width: 100%;
     scroll-snap-align: start;
     background-color: #84728B;
- }
- .galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    justify-items: space-evenly; /* centraliza cada item */
-    align-items: center;      /* centraliza na vertical */
 }
+
 .projetos-wrapper {
     display: grid;
-    grid-template-columns: 120px 1fr; /* título + galeria */
-    align-items: center; /* CENTRALIZA VERTICAL */
+    grid-template-columns: 120px 1fr; 
+    align-items: center;
     gap: 30px;
     padding-left: 40px;
 }
+
 .titulo-vertical {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -140,6 +134,16 @@ nav.menu a.btn-nav {
     text-align: center;
 }
 
+/* ------- GALERIA ORGANIZADA E CORRIGIDA ------- */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: start;  /* impede desalinhamento */
+}
+
 .item {
     width: 100%;
     max-width: 220px;
@@ -147,15 +151,14 @@ nav.menu a.btn-nav {
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
 
-    /* garante altura igual em TODAS as células */
-    height: 260px;
+    height: 260px; /* força todos iguais */
 }
 
 .item img {
     width: 100%;
-    height: 180px;
+    height: 180px; /* deixa todas iguais */
     object-fit: cover;
     border-radius: 10px;
 }
@@ -166,54 +169,33 @@ nav.menu a.btn-nav {
     font-weight: bold;
     color: #333;
 }
-.projetos-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px 20px; /* espaço entre linhas e colunas */
-    align-items: start; /* força todos a começarem alinhados */
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* garante que todas as imagens tenham exatamente a mesma altura */
-.card img {
-    width: 100%;
-    height: 200px;   /* ajuste como preferir */
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
 
 /* ------------------------------------------------------------- */
 /* CURSOS */
 /* ------------------------------------------------------------- */
 
-#cursos   { 
+#cursos { 
     background-color: #3F6152; 
     height: 95vh;
     width: 100%;
     scroll-snap-align: start;
 }
 
-
 /* ------------------------------------------------------------- */
 /* CONTATO */
 /* ------------------------------------------------------------- */
 
-#contato  { 
+#contato { 
     background-color: #84728B; 
     height: 95vh;
     width: 100%;
     scroll-snap-align: start;
 }
 
+/* ------------------------------------------------------------- */
+/* BOTÕES FIXOS */
+/* ------------------------------------------------------------- */
 
-/* BOTÃO FIXO DOS PONTOS */
 .pontos-fixed {
     position: fixed;
     top: 30px;
@@ -229,8 +211,6 @@ nav.menu a.btn-nav {
     transition: transform .2s ease;
 }
 
-
-/* BOTÃO FIXO DO EMAIL */
 .email-fixed {
     position: fixed;
     bottom: 30px;
@@ -251,14 +231,12 @@ nav.menu a.btn-nav {
 }
 
 /* ------------------------------------------------------------- */
-/* POPUP – CORRIGIDO E RESPONSIVO */
+/* POPUP */
 /* ------------------------------------------------------------- */
 
-/* overlay (fundo escuro) */
 .popup-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
@@ -267,17 +245,15 @@ nav.menu a.btn-nav {
     align-items: center;
     z-index: 10000;
     backdrop-filter: blur(6px);
-    padding: 20px; /* evita encostar nas bordas no celular */
-    overflow-y: auto; /* ESSENCIAL! */
-    inset: 0; /* garante que pega a tela toda, ignorando margens externas */
-    min-height: 100vh;     /* força vertical REAL */
+    padding: 20px;
+    overflow-y: auto;
+    min-height: 100vh;
 }
 
-/* janela do popup */
 .popup {
     background: #baa5c2;
     width: 100%;
-    max-width: 450px;   /* limite bonito no computador */
+    max-width: 450px;
     border-radius: 18px;
     padding: 30px 40px;
     box-shadow: 0px 8px 25px rgba(0,0,0,0.25);
@@ -286,11 +262,9 @@ nav.menu a.btn-nav {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    margin: auto; /* mantém centralizado mesmo quando cresce */
-
+    margin: auto;
 }
 
-/* botão fechar */
 .close-btn {
     position: absolute;
     top: 12px;
@@ -306,7 +280,6 @@ nav.menu a.btn-nav {
     transform: scale(1.2);
 }
 
-/* título */
 .popup h2 {
     font-size: 1.8rem;
     color: #3F6152;
@@ -314,7 +287,6 @@ nav.menu a.btn-nav {
     margin: 0 0 15px;
 }
 
-/* campos */
 .popup input,
 .popup textarea {
     width: 100%;
@@ -327,7 +299,6 @@ nav.menu a.btn-nav {
     transition: border .2s ease;
 }
 
-/* foco nos campos */
 .popup input:focus,
 .popup textarea:focus {
     border-color: #3F6152;
@@ -337,7 +308,6 @@ nav.menu a.btn-nav {
     height: 120px; 
 }
 
-/* botão enviar */
 .popup button {
     background: #3F6152;
     color: #E0C792;
@@ -356,36 +326,11 @@ nav.menu a.btn-nav {
     transform: scale(1.05);
 }
 
-
-
-
 /* ------------------------------------------------------------- */
 /* RESPONSIVIDADE */
 /* ------------------------------------------------------------- */
 
-@media (max-width: 700px) {
-    .popup {
-        padding: 25px;
-    }
-
-    .popup h2 {
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .popup {
-        padding: 20px;
-        max-width: 90vw;
-    }
-
-    .popup textarea {
-        height: 140px;
-    }
-}
-
 @media (max-width: 850px) {
-
     #sobre {
         margin: 30px 15px;
         padding: 25px;
@@ -400,15 +345,12 @@ nav.menu a.btn-nav {
     }
 }
 
-
-@media (max-width: 600px) {
-    .popup {
-        width: 80vw !important;   /* mais largo no celular */
-        height: auto !important;  /* ajusta automaticamente */
-        padding: 25px;
+@media (max-width: 800px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-/* hero responsivo */
 @media (max-width: 767px) {
     .hero {
         background-size: contain;
@@ -421,9 +363,11 @@ nav.menu a.btn-nav {
     }
 }
 
-    @media (max-width: 800px) {
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 600px) {
+    .popup {
+        width: 80vw !important;
+        height: auto !important;
+        padding: 25px;
     }
 }
 
@@ -431,6 +375,13 @@ nav.menu a.btn-nav {
     .galeria {
         grid-template-columns: 1fr;
     }
+
+    .popup {
+        padding: 20px;
+        max-width: 90vw;
+    }
+
+    .popup textarea {
+        height: 140px;
+    }
 }
-
-
