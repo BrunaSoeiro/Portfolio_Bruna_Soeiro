@@ -104,8 +104,6 @@ nav.menu a.btn-nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: auto;
-    padding: 40px;
     flex-wrap: wrap;
 }
 
