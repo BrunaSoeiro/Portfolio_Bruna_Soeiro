@@ -115,12 +115,12 @@ nav.menu a.btn-nav {
     width: 100%;
     scroll-snap-align: start;
     background-color: #84728B;
+    justify-items: center; 
+    align-items: center; /* centraliza na vertical */
 }
 .galeria { 
     display: grid; 
     grid-template-columns: repeat(4, 1fr); /* 4 colunas */ 
-    justify-items: center; 
-    align-items: center; /* centraliza na vertical */
 }
 .item { 
     text-align: center; /* título centralizado */ 
