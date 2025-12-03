@@ -132,11 +132,10 @@ nav.menu a.btn-nav {
     flex-direction: column;   /* mantém conteúdo em coluna */
  }
  .galeria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;          /* espaçamento entre os itens */
-    flex-wrap: wrap;    /* permite quebrar para próxima linha no celular */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 40px; /* espaço entre os itens */
+    justify-items: center; /* centraliza cada item */
     margin-top: 20px;
 }
 
@@ -367,4 +366,17 @@ nav.menu a.btn-nav {
         text-align: center;
     }
 }
+
+    @media (max-width: 800px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
 
