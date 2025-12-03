@@ -103,8 +103,7 @@ nav.menu a.btn-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    max-width: 1400px;
+    gap: 50px;
     margin: auto;
     padding: 40px;
     flex-wrap: wrap;
