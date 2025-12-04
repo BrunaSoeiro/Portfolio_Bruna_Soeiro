@@ -135,7 +135,6 @@ nav.menu a.btn-nav {
     justify-content: center;  /* AGORA FUNCIONA */
     align-items: center;            /* alinha verticalmente */
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .item { 
@@ -272,7 +271,7 @@ nav.menu a.btn-nav {
 /* Card do formulário */
 #contato form {
     background-color: #3f6f6f;
-    padding: 20px 30px;
+    padding: 15px 25px;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
