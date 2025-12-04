@@ -272,7 +272,7 @@ nav.menu a.btn-nav {
 /* Card do formulário */
 #contato form {
     background-color: #3f6f6f;
-    padding: 25px 35px;
+    padding: 20px 30px;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -341,6 +341,7 @@ nav.menu a.btn-nav {
     cursor: pointer;
     margin-top: 15px;
     transition: 0.3s ease;
+    whidth: 200px;
 }
 
 .btn-enviar:hover {
