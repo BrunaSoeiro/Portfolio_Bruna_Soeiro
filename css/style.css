@@ -245,7 +245,6 @@ nav.menu a.btn-nav {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* antes estava center */
-    padding-top: 120px; /* sobe o card */
     min-height: 100vh;
 
 }
