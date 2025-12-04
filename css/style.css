@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nothing+You+Could+Do&family=Permanent+Marker&family=Rock+Salt&family=Sigmar&display=swap');
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("fonts/CenturyGothic.ttf") format("truetype");
+}
 
 /* ------------------------------------------------------------- */
 /* GERAL */
@@ -70,15 +74,22 @@ nav.menu a.btn-nav {
 
 #sobre {
     background-color: #3F6152;
-    min-height: 95vh;
+    min-height: 90vh;
     width: 100%;
     scroll-snap-align: start;
+
+    display: flex;
+    justify-content: center;   /* centraliza o bloco como um todo */
+    align-items: center;       /* centraliza verticalmente */
 }
+
 .sobre-container {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-evenly;  /* AGORA FUNCIONA */
+    align-items: center;            /* alinha verticalmente */
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;              /* opcional: deixa mais organizado */
 }
 .sobre-texto p {
     max-width: 600px;
@@ -109,17 +120,22 @@ nav.menu a.btn-nav {
 /* ------------------------------------------------------------- */
 
 #projetos { 
-    height: 95vh;
+    height: 90vh;
     width: 100%;
     scroll-snap-align: start;
     background-color: #84728B;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
 }
 
 .galeria { 
     display: grid; 
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
-    justify-content: space-evenly;
-    align-items: center;
+    grid-template-columns: repeat(4, 220px); /* 4 colunas fixas e centralizadas */
+    justify-content: center;  /* AGORA FUNCIONA */
+    align-items: center;            /* alinha verticalmente */
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .item { 
@@ -132,11 +148,12 @@ nav.menu a.btn-nav {
     border-radius: 10px; /* opcional: cantos arredondados */ 
 } 
 
-.titulo { 
-    margin-top: 8px; 
-    font-size: 1.1em; 
-    font-weight: bold; 
-    color: #333; 
+.titulo {  
+    margin: 10px; 
+    color: #E0C792;
+    font-family: "Century Gothic", sans-serif;
+    background-color: #3F6152;
+    border-radius: 10px;
 }
 
 
@@ -146,10 +163,73 @@ nav.menu a.btn-nav {
 
 #cursos { 
     background-color: #3F6152; 
-    height: 95vh;
+    height: 90vh;
     width: 100%;
     scroll-snap-align: start;
+    padding: 60px 20px;
 }
+
+/* Estilo base dos cards */
+.categoria {
+    width: 350px;
+    align-items: center;
+}
+
+/* Alinhamentos */
+.cat-right {
+    margin-left: auto;   /* card vai pra direita */
+    margin-right: 500px;  /* afasta da borda direita */
+    margin-top: 100px;
+}
+
+.cat-left {
+    margin-right: auto;  /* card vai pra esquerda */
+    margin-left: 450px;   /* afasta da borda esquerda */
+    margin-top: 50px;
+}
+
+/* Textos */
+.categoria h3 {
+    font-family: "Sigmar", sans-serif;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #E0C792;
+    margin: 10px 0;
+}
+
+.categoria ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 2;
+    list-style: none;
+    font-weight: bold;
+}
+
+.categoria li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+    color: white;
+    padding-left: 0;
+}
+
+.categoria li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 1.3rem;
+    content: none; /* remove o "•" que eu tinha colocado antes */
+}
+
+.img-curso {
+    width: 120px;      /* tamanho da imagem */
+    margin-top: 20px;  /* espaço acima */
+}
+
 
 /* ------------------------------------------------------------- */
 /* CONTATO */
@@ -157,10 +237,92 @@ nav.menu a.btn-nav {
 
 #contato { 
     background-color: #84728B; 
-    height: 95vh;
+    height: 90vh;
     width: 100%;
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* antes estava center */
+    padding-top: 120px; /* sobe o card */
+    min-height: 100vh;
+
 }
+
+/* Título */
+#contato h1 {
+    font-family: "Sigmar", sans-serif;
+    font-size: 2.5em;
+    color: #f3d8a8; 
+    text-align: center;
+    font-weight: 700;
+    margin: 20px;
+    line-height: 1;
+}
+#contato h2 {
+    color: #3F6152;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Card do formulário */
+#contato form {
+    background-color: #3f6f6f;
+    padding: 30px 40px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+/* Labels */
+#contato label {
+    font-size: 1rem;
+    color: #f5e7c8;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+#contato input {
+    padding: 12px;
+    font-size: 1rem;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    margin-bottom: 25px;
+}
+
+/* Input quando está selecionado */
+#contato input:focus {
+    box-shadow: 0 0 0 3px #f3d8a8;
+}
+
+/* Campo maior – mensagem */
+#contato textarea#campo_msg {
+    height: 130px;
+    padding-top: 10px;        /* faz o placeholder subir */
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: vertical;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+#contato textarea#campo_msg:focus {
+    box-shadow: 0 0 0 3px #f3d8a8;
+}
+
 
 /* ------------------------------------------------------------- */
 /* BOTÕES FIXOS */
@@ -168,7 +330,7 @@ nav.menu a.btn-nav {
 
 .pontos-fixed {
     position: fixed;
-    top: 30px;
+    top: 50px;
     right: 15px;
     background: transparent;
     border: none;
