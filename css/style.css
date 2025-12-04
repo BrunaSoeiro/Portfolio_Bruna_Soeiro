@@ -489,6 +489,7 @@ nav.menu a.btn-nav {
     font-family: "Century Gothic", sans-serif;
     font-size: 0.95rem;
     margin-top: 40px;
+    scroll-snap-align: start;
 }
 
 .site-footer p {
