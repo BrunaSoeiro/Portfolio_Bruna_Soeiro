@@ -284,19 +284,19 @@ nav.menu a.btn-nav {
 #contato label {
     font-size: 1rem;
     color: #f5e7c8;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Inputs */
 #contato input {
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
 
     border-radius: 10px;
     border: none;
     outline: none;
 
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 /* Input quando está selecionado */
@@ -313,7 +313,7 @@ nav.menu a.btn-nav {
 
 #contato textarea#campo_msg {
     height: 100px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     border: none;
     outline: none;
