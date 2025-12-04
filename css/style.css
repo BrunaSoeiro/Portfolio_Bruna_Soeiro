@@ -344,7 +344,7 @@ nav.menu a.btn-nav {
     transition: transform .2s ease;
 }
 
-.email-fixed {
+.zap-fixed {
     position: fixed;
     bottom: 15px;
     right: 30px;
@@ -354,12 +354,12 @@ nav.menu a.btn-nav {
     z-index: 9999;
 }
 
-.email-fixed img {
+.zap-fixed img {
     width: 40px;
     transition: transform .2s ease;
 }
 
-.email-fixed:hover img {
+.zap-fixed:hover img {
     transform: scale(1.15);
 }
 
