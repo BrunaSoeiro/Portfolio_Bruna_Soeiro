@@ -130,15 +130,18 @@
             <h2>Tem uma pergunta ou proposta,<br>ou só quer
                 dar um oi? Vá em frente...</h2>
 
-            <form action="">
-                <label for="campo_nome">Nome:</label>
-                <input type="text" id="campo_nome" placeholder="Digite seu nome">
-                <label for="campo_email">E-mail:</label>
-                <input type="text" id="campo_email" placeholder="Digite seu e-mail">
-                <label for="campo_msg">Mensagem:</label>
-                <textarea id="campo_msg" placeholder="Digite sua mensagem"></textarea>
-
-            </form>
+        <form id="contatoForm">
+            <label>Nome</label>
+            <input type="text" id="nomeContato" required>
+        
+            <label>Email</label>
+            <input type="email" id="emailContato" required>
+        
+            <label>Mensagem</label>
+            <textarea id="msgContato" required></textarea>
+        
+            <button type="submit">Enviar</button>
+        </form>
 
 
 
@@ -146,9 +149,9 @@
 
         </section><br>
 <!-- PONTO FIXO -->
-<button class="pontos-fixed">
-    <img src="css/images/pontos.png" alt="Pontos ícone">
-</button>
+<a class="email-fixed" href="https://wa.me/5521991469977" target="_blank">
+    <img src="images/whats.png" alt="WhatsApp">
+</a>
         
 <!-- BOTÃO FIXO -->
 <button id="openPopup" class="email-fixed">
