@@ -135,6 +135,7 @@ nav.menu a.btn-nav {
     justify-content: center;  /* AGORA FUNCIONA */
     align-items: center;            /* alinha verticalmente */
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .item { 
@@ -246,6 +247,7 @@ nav.menu a.btn-nav {
     align-items: center;
     justify-content: flex-start; /* antes estava center */
     min-height: 100vh;
+    padding-top: 50px;
 
 }
 
@@ -278,6 +280,7 @@ nav.menu a.btn-nav {
     max-width: 400px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     margin: 20px;
+    
 }
 
 /* Labels */
