@@ -166,7 +166,9 @@ nav.menu a.btn-nav {
     height: 90vh;
     width: 100%;
     scroll-snap-align: start;
-    padding: 60px 20px;
+    display: flex;              /* ATIVA O FLEX */
+    flex-direction: column;     /* organiza em coluna */
+    justify-content: center;    /* CENTRALIZA VERTICALMENTE */
 }
 
 /* Estilo base dos cards */
@@ -179,13 +181,13 @@ nav.menu a.btn-nav {
 .cat-right {
     margin-left: auto;   /* card vai pra direita */
     margin-right: 500px;  /* afasta da borda direita */
-    margin-top: 100px;
+    align-items: center;
 }
 
 .cat-left {
     margin-right: auto;  /* card vai pra esquerda */
     margin-left: 450px;   /* afasta da borda esquerda */
-    margin-top: 50px;
+    align-items: center;
 }
 
 /* Textos */
@@ -226,7 +228,7 @@ nav.menu a.btn-nav {
 }
 
 .img-curso {
-    width: 120px;      /* tamanho da imagem */
+    width: 500px;      /* tamanho da imagem */
     margin-top: 20px;  /* espaço acima */
 }
 
