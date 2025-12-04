@@ -180,13 +180,13 @@ nav.menu a.btn-nav {
 /* Alinhamentos */
 .cat-right {
     margin-left: auto;   /* card vai pra direita */
-    margin-right: 500px;  /* afasta da borda direita */
+    margin-right: 400px;  /* afasta da borda direita */
     align-items: center;
 }
 
 .cat-left {
     margin-right: auto;  /* card vai pra esquerda */
-    margin-left: 450px;   /* afasta da borda esquerda */
+    margin-left: 400px;   /* afasta da borda esquerda */
     align-items: center;
 }
 
