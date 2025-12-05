@@ -24,91 +24,10 @@ html, body {
 }
 
 /* ------------------------------------------------------------- */
-/* ETIQUETAS LATERAIS – ESQUERDA */
+/* CAPA */
 /* ------------------------------------------------------------- */
 
-.etiqueta-sobre,
-.etiqueta-projetos,
-.etiqueta-cursos,
-.etiqueta-contato {
-    position: absolute;
-    left: 0;
-    top: 50px;
-    padding: 12px 25px;
-    color: #fff;
-    font-size: 1.6em;
-    font-family: "Permanent Marker", sans-serif;
-    letter-spacing: 2px;
-    z-index: 20;
-    transform: translateX(-50%) rotate(-90deg);
-    transform-origin: left top;
-}
-
-/* COR 1 */
-.etiqueta-sobre {
-    background-color: #84728B;
-}
-.etiqueta-sobre::after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 40px solid #3F6152;
-    border-right: 55px solid transparent;
-}
-
-/* COR 2 */
-.etiqueta-projetos {
-    background-color: #3F6152;
-}
-.etiqueta-projetos::after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 40px solid #84728B;
-    border-right: 55px solid transparent;
-}
-
-/* COR 1 (alternando) */
-.etiqueta-cursos {
-    background-color: #84728B;
-}
-.etiqueta-cursos::after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 40px solid #3F6152;
-    border-right: 55px solid transparent;
-}
-
-/* COR 2 (alternando) */
-.etiqueta-contato {
-    background-color: #3F6152;
-}
-.etiqueta-contato::after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 40px solid #84728B;
-    border-right: 55px solid transparent;
-}
-
-/* ------------------------------------------------------------- */
-/* HERO */
-/* ------------------------------------------------------------- */
-
-.hero {
+.capa {
     width: 100%;
     background-image: url('images/capa-fundo.png');
     background-size: contain;
@@ -118,10 +37,6 @@ html, body {
     aspect-ratio: 1920 / 800;
     scroll-snap-align: start;
 }
-
-/* ------------------------------------------------------------- */
-/* MENU */
-/* ------------------------------------------------------------- */
 
 .menu {
     background-color: #84728B;
@@ -163,11 +78,13 @@ nav.menu a.btn-nav {
     min-height: 90vh;
     width: 100%;
     scroll-snap-align: start;
-
+    position: relative;
     display: flex;
     justify-content: center; 
     align-items: center;      
 }
+
+.etiqueta-sobre { top: 120px; }
 
 .sobre-container {
     display: flex;
@@ -217,7 +134,9 @@ nav.menu a.btn-nav {
     display: flex;
     justify-content: center; 
     align-items: center;     
+    position: relative;
 }
+.etiqueta-projetos { top: 120px; }
 
 .galeria { 
     display: grid; 
@@ -249,7 +168,6 @@ nav.menu a.btn-nav {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-
 /* ------------------------------------------------------------- */
 /* CURSOS */
 /* ------------------------------------------------------------- */
@@ -261,8 +179,10 @@ nav.menu a.btn-nav {
     scroll-snap-align: start;
     display: flex;             
     flex-direction: column;     
-    justify-content: center;    
+    justify-content: center;  
+    position: relative;  
 }
+.etiqueta-cursos { top: 100px; }
 
 .categoria {
     width: 350px;
@@ -323,29 +243,31 @@ nav.menu a.btn-nav {
     margin-top: 20px;  
 }
 
-
 /* ------------------------------------------------------------- */
 /* CONTATO */
 /* ------------------------------------------------------------- */
 
 #contato { 
     background-color: #84728B;
-    height: 83vh;
+    height: 85vh;
     width: 100%;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+.etiqueta-contato { top: 100px; }
 
 #contato h1 {
     font-family: "Sigmar", sans-serif;
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: #f3d8a8; 
     text-align: center;
     font-weight: 700;
     margin: 0;
+    margin-top: 10px;
     line-height: 1;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
@@ -363,14 +285,15 @@ nav.menu a.btn-nav {
 
 #contato form {
     background-color: #3F6152;
-    padding: 15px 25px;
+    padding: 20px;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 400px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    margin: 20px;
+    margin-bottom: 20px;
+    text-align: left;
     
 }
 
@@ -378,6 +301,7 @@ nav.menu a.btn-nav {
     font-size: 1rem;
     color: #f5e7c8;
     margin-bottom: 8px;
+    padding: 5px;
 }
 
 #contato input {
@@ -435,6 +359,18 @@ nav.menu a.btn-nav {
     transform: scale(1.07);
 }
 
+.contato-wrapper {
+    background: rgba(255, 255, 255, 0.35); 
+    padding: 5px 45px;
+    border-radius: 20px;
+    backdrop-filter: blur(3px); 
+    width: fit-content;
+    margin: 0 auto;           
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    text-align: center;        
+}
 
 /* ------------------------------------------------------------- */
 /* BOTÕES FIXOS */
@@ -585,6 +521,49 @@ nav.menu a.btn-nav {
     margin: 5px 0;
 }
 
+/* ------------------------------------------------------------- */
+/* ETIQUETAS */
+/* ------------------------------------------------------------- */
+
+.etiqueta-sobre,
+.etiqueta-projetos,
+.etiqueta-cursos,
+.etiqueta-contato {
+    position: absolute;
+    left: 40px;
+    top: 120px;
+    width: 80px;
+    height: 180px; 
+    padding: 0;
+
+    background-color: #E0C792;
+    color: #fff;
+
+    writing-mode: vertical-rl;
+
+    border-radius: 0 0 12px 12px;
+    border-top: 6px solid #5c5112;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+
+    transform-origin: top center;
+    animation: balancar 2.5s ease-in-out infinite;
+}
+/* ANIMAÇÃO */
+@keyframes balancar {
+    0% { transform: rotate(1deg); }
+    50% { transform: rotate(-2deg); }
+    100% { transform: rotate(1deg); }
+}
 
 /* ------------------------------------------------------------- */
 /* RESPONSIVIDADE */
