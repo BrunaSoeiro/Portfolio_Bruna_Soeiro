@@ -88,6 +88,30 @@ nav.menu a.btn-nav {
     align-items: center;      
 }
 
+.etiqueta-sobre {
+    background-color: #3F6152;      /* cor igual da sua imagem */
+    color: #A8C3B5;                 /* mesmo tom de verde claro */
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.8em;
+    padding: 8px 35px;
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;              /* posição igual da imagem */
+    margin-top: 20px;
+}
+
+/* Triângulo lateral (como na imagem) */
+.etiqueta-sobre::after {
+    content: "";
+    position: absolute;
+    right: -55px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #3F6152;  /* mesma cor */
+    border-left: 55px solid transparent;
+}
+
 .sobre-container {
     display: flex;
     justify-content: space-evenly;  
@@ -138,6 +162,30 @@ nav.menu a.btn-nav {
     align-items: center;     
 }
 
+.etiqueta-projetos {
+    background-color: #3F6152;      /* cor igual da sua imagem */
+    color: #A8C3B5;                 /* mesmo tom de verde claro */
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.8em;
+    padding: 8px 35px;
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;              /* posição igual da imagem */
+    margin-top: 20px;
+}
+
+/* Triângulo lateral (como na imagem) */
+.etiqueta-projetos::after {
+    content: "";
+    position: absolute;
+    right: -55px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #3F6152;  /* mesma cor */
+    border-left: 55px solid transparent;
+}
+
 .galeria { 
     display: grid; 
     grid-template-columns: repeat(4, 220px); 
@@ -181,6 +229,30 @@ nav.menu a.btn-nav {
     display: flex;             
     flex-direction: column;     
     justify-content: center;    
+}
+
+.etiqueta-cursos {
+    background-color: #3F6152;      /* cor igual da sua imagem */
+    color: #A8C3B5;                 /* mesmo tom de verde claro */
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.8em;
+    padding: 8px 35px;
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;              /* posição igual da imagem */
+    margin-top: 20px;
+}
+
+/* Triângulo lateral (como na imagem) */
+.etiqueta-cursos::after {
+    content: "";
+    position: absolute;
+    right: -55px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #3F6152;  /* mesma cor */
+    border-left: 55px solid transparent;
 }
 
 .categoria {
@@ -256,7 +328,30 @@ nav.menu a.btn-nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
 
+.etiqueta-contato {
+    background-color: #3F6152;      /* cor igual da sua imagem */
+    color: #A8C3B5;                 /* mesmo tom de verde claro */
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2.8em;
+    padding: 8px 35px;
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;              /* posição igual da imagem */
+    margin-top: 20px;
+}
+
+/* Triângulo lateral (como na imagem) */
+.etiqueta-contato::after {
+    content: "";
+    position: absolute;
+    right: -55px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #3F6152;  /* mesma cor */
+    border-left: 55px solid transparent;
 }
 
 #contato h1 {
