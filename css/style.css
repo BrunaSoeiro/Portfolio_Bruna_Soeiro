@@ -24,6 +24,87 @@ html, body {
 }
 
 /* ------------------------------------------------------------- */
+/* ETIQUETAS LATERAIS – ESQUERDA */
+/* ------------------------------------------------------------- */
+
+.etiqueta-sobre,
+.etiqueta-projetos,
+.etiqueta-cursos,
+.etiqueta-contato {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    padding: 12px 25px;
+    color: #fff;
+    font-size: 1.6em;
+    font-family: "Permanent Marker", sans-serif;
+    letter-spacing: 2px;
+    z-index: 20;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: left top;
+}
+
+/* COR 1 */
+.etiqueta-sobre {
+    background-color: #3F6152;
+}
+.etiqueta-sobre::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #3F6152;
+    border-right: 55px solid transparent;
+}
+
+/* COR 2 */
+.etiqueta-projetos {
+    background-color: #84728B;
+}
+.etiqueta-projetos::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #84728B;
+    border-right: 55px solid transparent;
+}
+
+/* COR 1 (alternando) */
+.etiqueta-cursos {
+    background-color: #3F6152;
+}
+.etiqueta-cursos::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #3F6152;
+    border-right: 55px solid transparent;
+}
+
+/* COR 2 (alternando) */
+.etiqueta-contato {
+    background-color: #84728B;
+}
+.etiqueta-contato::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #84728B;
+    border-right: 55px solid transparent;
+}
+
+/* ------------------------------------------------------------- */
 /* HERO */
 /* ------------------------------------------------------------- */
 
