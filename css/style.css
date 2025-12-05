@@ -174,7 +174,7 @@ nav.menu a.btn-nav {
 /* ------------------------------------------------------------- */
 
 #cursos { 
-    background-color: #84728B; 
+    background-color: #3F6152; 
     height: 90vh;
     width: 100%;
     scroll-snap-align: start;
@@ -248,7 +248,7 @@ nav.menu a.btn-nav {
 /* ------------------------------------------------------------- */
 
 #contato { 
-    background-color: #3f6f6f;
+    background-color: #84728B;
     height: 83vh;
     width: 100%;
     scroll-snap-align: start;
