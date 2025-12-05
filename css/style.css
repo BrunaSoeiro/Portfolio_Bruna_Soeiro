@@ -46,7 +46,7 @@ html, body {
 
 /* COR 1 */
 .etiqueta-sobre {
-    background-color: #3F6152;
+    background-color: #84728B;
 }
 .etiqueta-sobre::after {
     content: "";
@@ -61,7 +61,7 @@ html, body {
 
 /* COR 2 */
 .etiqueta-projetos {
-    background-color: #84728B;
+    background-color: #3F6152;
 }
 .etiqueta-projetos::after {
     content: "";
@@ -76,7 +76,7 @@ html, body {
 
 /* COR 1 (alternando) */
 .etiqueta-cursos {
-    background-color: #3F6152;
+    background-color: #84728B;
 }
 .etiqueta-cursos::after {
     content: "";
@@ -91,7 +91,7 @@ html, body {
 
 /* COR 2 (alternando) */
 .etiqueta-contato {
-    background-color: #84728B;
+    background-color: #3F6152;
 }
 .etiqueta-contato::after {
     content: "";
