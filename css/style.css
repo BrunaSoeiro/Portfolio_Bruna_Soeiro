@@ -78,7 +78,7 @@ nav.menu a.btn-nav {
 /* ------------------------------------------------------------- */
 
 #sobre {
-    background-color: #3f6f6f;
+    background-color: #3F6152;
     min-height: 90vh;
     width: 100%;
     scroll-snap-align: start;
@@ -282,7 +282,7 @@ nav.menu a.btn-nav {
 }
 
 #contato form {
-    background-color: #3f6f6f;
+    background-color: #3F6152;
     padding: 15px 25px;
     border-radius: 18px;
     display: flex;
