@@ -89,14 +89,14 @@ nav.menu a.btn-nav {
 }
 
 .etiqueta-sobre {
-    background-color: #3F6152;      /* cor igual da sua imagem */
-    color: #A8C3B5;                 /* mesmo tom de verde claro */
+    background-color: #84728B;      
+    color: #A8C3B5;            
     font-family: 'Alfa Slab One', cursive;
     font-size: 2.8em;
     padding: 8px 35px;
     display: inline-block;
     position: relative;
-    margin-left: 40px;              /* posição igual da imagem */
+    margin-left: 40px;            
     margin-top: 20px;
 }
 
@@ -110,6 +110,7 @@ nav.menu a.btn-nav {
     height: 0;
     border-top: 40px solid #3F6152;  /* mesma cor */
     border-left: 55px solid transparent;
+    transform: rotate(90deg);
 }
 
 .sobre-container {
@@ -184,6 +185,7 @@ nav.menu a.btn-nav {
     height: 0;
     border-top: 40px solid #3F6152;  /* mesma cor */
     border-left: 55px solid transparent;
+    transform: rotate(90deg);
 }
 
 .galeria { 
@@ -232,14 +234,14 @@ nav.menu a.btn-nav {
 }
 
 .etiqueta-cursos {
-    background-color: #3F6152;      /* cor igual da sua imagem */
-    color: #A8C3B5;                 /* mesmo tom de verde claro */
+    background-color: #84728B;     
+    color: #A8C3B5;                
     font-family: 'Alfa Slab One', cursive;
     font-size: 2.8em;
     padding: 8px 35px;
     display: inline-block;
     position: relative;
-    margin-left: 40px;              /* posição igual da imagem */
+    margin-left: 40px;          
     margin-top: 20px;
 }
 
@@ -253,6 +255,7 @@ nav.menu a.btn-nav {
     height: 0;
     border-top: 40px solid #3F6152;  /* mesma cor */
     border-left: 55px solid transparent;
+    transform: rotate(90deg);
 }
 
 .categoria {
@@ -352,6 +355,7 @@ nav.menu a.btn-nav {
     height: 0;
     border-top: 40px solid #3F6152;  /* mesma cor */
     border-left: 55px solid transparent;
+    transform: rotate(90deg);
 }
 
 #contato h1 {
