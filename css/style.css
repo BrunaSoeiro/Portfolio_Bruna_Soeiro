@@ -78,23 +78,23 @@ nav.menu a.btn-nav {
 /* ------------------------------------------------------------- */
 
 #sobre {
-    background-image: url('images/sobre.png');
+    background-color: #3f6f6f;
     min-height: 90vh;
     width: 100%;
     scroll-snap-align: start;
 
     display: flex;
-    justify-content: center;   /* centraliza o bloco como um todo */
-    align-items: center;       /* centraliza verticalmente */
+    justify-content: center; 
+    align-items: center;      
 }
 
 .sobre-container {
     display: flex;
-    justify-content: space-evenly;  /* AGORA FUNCIONA */
-    align-items: center;            /* alinha verticalmente */
+    justify-content: space-evenly;  
+    align-items: center;        
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1400px;              /* opcional: deixa mais organizado */
+    max-width: 1400px;          
 }
 .sobre-texto p {
     max-width: 600px;
@@ -128,7 +128,7 @@ nav.menu a.btn-nav {
 /* ------------------------------------------------------------- */
 
 #projetos { 
-    background-image: url('images/projetos.png');
+    background-color: #84728B;
     height: 90vh;
     width: 100%;
     scroll-snap-align: start;
@@ -174,7 +174,7 @@ nav.menu a.btn-nav {
 /* ------------------------------------------------------------- */
 
 #cursos { 
-    background-image: url('images/cursos.png'); 
+    background-color: #84728B; 
     height: 90vh;
     width: 100%;
     scroll-snap-align: start;
@@ -248,7 +248,7 @@ nav.menu a.btn-nav {
 /* ------------------------------------------------------------- */
 
 #contato { 
-    background-image: url('images/contato.png');
+    background-color: #3f6f6f;
     height: 83vh;
     width: 100%;
     scroll-snap-align: start;
