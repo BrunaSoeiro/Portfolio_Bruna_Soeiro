@@ -46,21 +46,25 @@ html, body {
     background-color: #84728B;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
     flex-wrap: wrap;
 }
 
 nav.menu a.btn-nav {
-    padding: 10px 80px;
+    padding: 8px 50px;
     margin-bottom: 30px;
-    background-color: #3F6152;
-    color: #E0C792;
+    background-color: #9b8aa1;
+    color: #68566e;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     border-radius: 8px;
     transition: 0.3s ease;
     border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    font-family: "Century Gothic", sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 
 .btn-nav:hover {
@@ -106,6 +110,7 @@ nav.menu a.btn-nav {
     font-size: 2.5em;
     font-weight: bolder;
     color: #E0C792;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 
 .sobre-imagem img {
@@ -114,6 +119,8 @@ nav.menu a.btn-nav {
     height: auto;
     display: block;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    
 }
 
 /* ------------------------------------------------------------- */
@@ -127,35 +134,38 @@ nav.menu a.btn-nav {
     scroll-snap-align: start;
     background-color: #84728B;
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center;     /* centraliza verticalmente */
+    justify-content: center; 
+    align-items: center;     
 }
 
 .galeria { 
     display: grid; 
-    grid-template-columns: repeat(4, 220px); /* 4 colunas fixas e centralizadas */
+    grid-template-columns: repeat(4, 220px); 
     justify-content: center;  
-    align-items: center;            /* alinha verticalmente */
+    align-items: center;           
     flex-wrap: wrap;
     gap: 50px;
 }
 
 .item { 
-    text-align: center; /* título centralizado */ 
+    text-align: center;  
     width: 200px; 
 } 
 
 .item img { 
     width: 100%; 
-    border-radius: 10px; /* opcional: cantos arredondados */ 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25); 
 } 
 
 .titulo {  
-    margin: 10px; 
-    color: #E0C792;
+    padding: 3px auto;
+    color: #68566e;
     font-family: "Century Gothic", sans-serif;
-    background-color: #3F6152;
+    background-color: #9b8aa1;
     border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 
@@ -168,37 +178,35 @@ nav.menu a.btn-nav {
     height: 90vh;
     width: 100%;
     scroll-snap-align: start;
-    display: flex;              /* ATIVA O FLEX */
-    flex-direction: column;     /* organiza em coluna */
-    justify-content: center;    /* CENTRALIZA VERTICALMENTE */
+    display: flex;             
+    flex-direction: column;     
+    justify-content: center;    
 }
 
-/* Estilo base dos cards */
 .categoria {
     width: 350px;
     align-items: center;
 }
 
-/* Alinhamentos */
 .cat-right {
-    margin-left: auto;   /* card vai pra direita */
-    margin-right: 400px;  /* afasta da borda direita */
+    margin-left: auto;   
+    margin-right: 400px;  
     align-items: center;
 }
 
 .cat-left {
-    margin-right: auto;  /* card vai pra esquerda */
-    margin-left: 400px;   /* afasta da borda esquerda */
+    margin-right: auto;  
+    margin-left: 400px;  
     align-items: center;
 }
 
-/* Textos */
 .categoria h3 {
     font-family: "Sigmar", sans-serif;
     font-size: 2.5em;
     font-weight: bolder;
     color: #ffffff;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 
 .categoria ul {
@@ -226,12 +234,12 @@ nav.menu a.btn-nav {
     top: 0;
     color: white;
     font-size: 1.3rem;
-    content: none; /* remove o "•" que eu tinha colocado antes */
+    content: none; 
 }
 
 .img-curso {
-    width: 500px;      /* tamanho da imagem */
-    margin-top: 20px;  /* espaço acima */
+    width: 500px;      
+    margin-top: 20px;  
 }
 
 
@@ -251,7 +259,6 @@ nav.menu a.btn-nav {
 
 }
 
-/* Título */
 #contato h1 {
     font-family: "Sigmar", sans-serif;
     font-size: 2.5em;
@@ -261,7 +268,9 @@ nav.menu a.btn-nav {
     margin: 0;
     line-height: 1;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
+
 #contato h2 {
     color: #ffffff;
     margin-bottom: 40px;
@@ -272,7 +281,6 @@ nav.menu a.btn-nav {
     font-size: 1.3em;
 }
 
-/* Card do formulário */
 #contato form {
     background-color: #3f6f6f;
     padding: 15px 25px;
@@ -286,14 +294,12 @@ nav.menu a.btn-nav {
     
 }
 
-/* Labels */
 #contato label {
     font-size: 1rem;
     color: #f5e7c8;
     margin-bottom: 8px;
 }
 
-/* Inputs */
 #contato input {
     padding: 8px;
     font-size: 1rem;
@@ -305,7 +311,6 @@ nav.menu a.btn-nav {
     margin-bottom: 15px;
 }
 
-/* Input quando está selecionado */
 #contato input:focus {
     box-shadow: 0 0 0 3px #f3d8a8;
 }
@@ -315,7 +320,6 @@ nav.menu a.btn-nav {
     color: #d7cbb3;
     font-size: 0.95rem;
 }
-
 
 #contato textarea#campo_msg {
     height: 50px;
@@ -327,7 +331,6 @@ nav.menu a.btn-nav {
     font-size: 1rem;
     line-height: 1.5;
 }
-
 
 #contato textarea#campo_msg:focus {
     box-shadow: 0 0 0 3px #f3d8a8;
@@ -344,7 +347,6 @@ nav.menu a.btn-nav {
     cursor: pointer;
     margin-top: 15px;
     transition: 0.3s ease;
-    whidth: 200px;
 }
 
 .btn-enviar:hover {
@@ -489,8 +491,8 @@ nav.menu a.btn-nav {
 }
 
 .site-footer {
-    background-color: #3F6152;       /* fundo pedido */
-    color: #E0C792;                  /* mesma cor dos títulos */
+    background-color: #3F6152;       
+    color: #E0C792;                  
     text-align: center;
     padding: 25px 10px;
     font-family: "Century Gothic", sans-serif;

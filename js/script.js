@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // --- POPUP (se você quiser continuar usando em algum lugar) ---
     const openPopup = document.getElementById("openPopup");
     const closePopup = document.getElementById("closePopup");
     const popup = document.getElementById("emailPopup");
