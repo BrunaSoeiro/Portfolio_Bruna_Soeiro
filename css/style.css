@@ -48,7 +48,7 @@ html, body {
 
 nav.menu a.btn-nav {
     padding: 8px 50px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     background-color: #9b8aa1;
     color: #68566e;
     text-decoration: none;
@@ -75,7 +75,7 @@ nav.menu a.btn-nav {
 
 #sobre {
     background-color: #3F6152;
-    min-height: 90vh;
+    min-height: 92vh;
     width: 100%;
     scroll-snap-align: start;
     position: relative;
@@ -129,7 +129,7 @@ nav.menu a.btn-nav {
 
 #projetos {
     background-color: #84728B;
-    height: 90vh;
+    height: 75vh;
     width: 100%;
     scroll-snap-align: start;
     display: flex;
@@ -192,7 +192,7 @@ nav.menu a.btn-nav {
 
 #cursos {
     background-image: url(images/cursos.png);
-    height: 90vh;
+    height: 75vh;
     width: 100%;
     scroll-snap-align: start;
     display: flex;
@@ -274,7 +274,7 @@ nav.menu a.btn-nav {
 
 #contato {
     background-color: #84728B;
-    height: 85vh;
+    height: 70vh;
     width: 100%;
     scroll-snap-align: start;
     display: flex;
@@ -590,6 +590,7 @@ nav.menu a.btn-nav {
 /* RESPONSIVIDADE */
 /* ------------------------------------------------------------- */
 
+/* SOBRE */
 @media (max-width: 850px) {
     #sobre {
         margin: 30px 15px;
@@ -605,18 +606,14 @@ nav.menu a.btn-nav {
     }
 }
 
-@media (max-width: 800px) {
+/* Galeria em 2 colunas */
+@media (max-width: 1024px) {
     .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 500px) {
-    .galeria {
-        grid-template-columns: 1fr;
-    }
-}
-
+/* Hero e botões */
 @media (max-width: 767px) {
     .hero {
         background-size: contain;
@@ -629,6 +626,7 @@ nav.menu a.btn-nav {
     }
 }
 
+/* Popup */
 @media (max-width: 600px) {
     .popup {
         width: 80vw !important;
@@ -637,9 +635,11 @@ nav.menu a.btn-nav {
     }
 }
 
-@media (max-width: 500px) {
+/* Galeria em 1 coluna + Popup */
+@media (max-width: 768px) {
     .galeria {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .popup {
@@ -649,5 +649,87 @@ nav.menu a.btn-nav {
 
     .popup textarea {
         height: 140px;
+    }
+}
+
+/* ============================== */
+/* TELAS MUITO GRANDES — TVs 4K  */
+/* ============================== */
+@media (min-width: 1600px) {
+    #projetos, #cursos, #contato {
+        padding-top: 80px;
+        zoom: 1.1;
+    }
+
+    .galeria {
+        grid-gap: 40px;
+    }
+
+    .categoria {
+        transform: scale(1.1);
+    }
+}
+
+/* ============================== */
+/* NOTEBOOK — 1366px             */
+/* ============================== */
+@media (max-width: 1366px) {
+    #projetos, #cursos, #contato {
+        padding-top: 60px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 200px);
+        grid-gap: 20px;
+    }
+
+    .categoria {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    #card-contato {
+        width: 70%;
+    }
+}
+
+/* ============================== */
+/* CELULAR GRANDE — até 768px   */
+/* ============================== */
+@media (max-width: 768px) {
+    #projetos, #cursos, #contato {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .categoria {
+        width: 100%;
+        margin: 0 auto 30px auto;
+    }
+
+    #card-contato {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #contato h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* CELULAR PEQUENO — até 480px */
+@media (max-width: 480px) {
+    #projetos h1, #cursos h1, #contato h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .categoria {
+        transform: scale(0.95);
+    }
+
+    .galeria img {
+        width: 100%;
+        height: auto;
     }
 }
