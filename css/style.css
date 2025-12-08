@@ -167,7 +167,7 @@ nav.menu a.btn-nav {
     color: #68566e;
     font-family: "Century Gothic", sans-serif;
     background-color: #9b8aa1;
-    border-radius: 10px;
+    border-radius: 10;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -175,7 +175,7 @@ nav.menu a.btn-nav {
 .projetos-wrapper {
     background: rgba(255, 255, 255, 0.35);
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 0;
     backdrop-filter: blur(3px);
     width: fit-content;
     margin: 0 auto;
@@ -216,9 +216,9 @@ nav.menu a.btn-nav {
     align-items: center;
     justify-items: center;
     background: rgba(255, 255, 255, 0.45);
-    border-radius: 20px;
+    border-radius: 0;
     backdrop-filter: blur(3px);
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
@@ -228,9 +228,9 @@ nav.menu a.btn-nav {
     align-items: center;
     justify-items: center;
     background: rgba(255, 255, 255, 0.45);
-    border-radius: 20px;
+    border-radius: 0;
     backdrop-filter: blur(3px);
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
@@ -383,7 +383,7 @@ nav.menu a.btn-nav {
 .contato-wrapper {
     background: rgba(255, 255, 255, 0.35);
     padding: 5px 45px;
-    border-radius: 20px;
+    border-radius: 0;
     backdrop-filter: blur(3px);
     width: fit-content;
     margin: 0 auto;
