@@ -15,7 +15,8 @@ body {
     padding: 0 !important;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -57,7 +58,7 @@ nav.menu a.btn-nav {
     border-radius: 8px;
     transition: 0.3s ease;
     border: 2px solid transparent;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     font-family: "Century Gothic", sans-serif;
     font-weight: bolder;
     font-size: 1.2em;
@@ -111,7 +112,7 @@ nav.menu a.btn-nav {
     font-size: 2.5em;
     font-weight: bolder;
     color: #E0C792;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .sobre-imagem img {
@@ -120,7 +121,7 @@ nav.menu a.btn-nav {
     height: auto;
     display: block;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* ------------------------------------------------------------- */
@@ -159,7 +160,7 @@ nav.menu a.btn-nav {
 .item img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .titulo {
@@ -169,7 +170,7 @@ nav.menu a.btn-nav {
     background-color: #9b8aa1;
     border-radius: 10;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .projetos-wrapper {
@@ -183,7 +184,7 @@ nav.menu a.btn-nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------------------------------------------------- */
@@ -219,7 +220,7 @@ nav.menu a.btn-nav {
     border-radius: 0;
     backdrop-filter: blur(3px);
     padding: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .cat-left {
@@ -231,7 +232,7 @@ nav.menu a.btn-nav {
     border-radius: 0;
     backdrop-filter: blur(3px);
     padding: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .categoria h3 {
@@ -240,7 +241,7 @@ nav.menu a.btn-nav {
     font-weight: bolder;
     color: #ffffff;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .categoria ul {
@@ -296,7 +297,7 @@ nav.menu a.btn-nav {
     font-weight: 700;
     margin: 10px 0 10px 0;
     line-height: 1;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contato h2 {
@@ -315,7 +316,7 @@ nav.menu a.btn-nav {
     flex-direction: column;
     width: 100%;
     max-width: 400px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     text-align: left;
 }
@@ -391,7 +392,7 @@ nav.menu a.btn-nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------------------------------------------------- */
@@ -441,7 +442,7 @@ nav.menu a.btn-nav {
     inset: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     display: none;
     justify-content: center;
     align-items: center;
@@ -458,7 +459,7 @@ nav.menu a.btn-nav {
     max-width: 450px;
     border-radius: 18px;
     padding: 30px 40px;
-    box-shadow: 0px 8px 25px rgba(0,0,0,0.25);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
     position: relative;
     animation: popupShow .25s ease-out;
     display: flex;
@@ -573,7 +574,7 @@ nav.menu a.btn-nav {
     font-weight: 600;
     font-size: 30px;
     letter-spacing: 1px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
     transform-origin: top center;
     animation: balancar 2.5s ease-in-out infinite;
 }
@@ -581,9 +582,17 @@ nav.menu a.btn-nav {
 /* ANIMAÇÃO */
 
 @keyframes balancar {
-    0% { transform: rotate(1deg); }
-    50% { transform: rotate(-2deg); }
-    100% { transform: rotate(1deg); }
+    0% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
 }
 
 /* ------------------------------------------------------------- */
@@ -656,7 +665,10 @@ nav.menu a.btn-nav {
 /* TELAS MUITO GRANDES — TVs 4K  */
 /* ============================== */
 @media (min-width: 1600px) {
-    #projetos, #cursos, #contato {
+
+    #projetos,
+    #cursos,
+    #contato {
         padding-top: 80px;
         zoom: 1.1;
     }
@@ -674,7 +686,10 @@ nav.menu a.btn-nav {
 /* NOTEBOOK — 1366px             */
 /* ============================== */
 @media (max-width: 1366px) {
-    #projetos, #cursos, #contato {
+
+    #projetos,
+    #cursos,
+    #contato {
         padding-top: 60px;
     }
 
@@ -697,7 +712,10 @@ nav.menu a.btn-nav {
 /* CELULAR GRANDE — até 768px   */
 /* ============================== */
 @media (max-width: 768px) {
-    #projetos, #cursos, #contato {
+
+    #projetos,
+    #cursos,
+    #contato {
         height: auto;
         padding: 40px 20px;
     }
@@ -719,7 +737,10 @@ nav.menu a.btn-nav {
 
 /* CELULAR PEQUENO — até 480px */
 @media (max-width: 480px) {
-    #projetos h1, #cursos h1, #contato h1 {
+
+    #projetos h1,
+    #cursos h1,
+    #contato h1 {
         font-size: 1.5rem;
         text-align: center;
     }
