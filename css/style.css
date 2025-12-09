@@ -104,7 +104,7 @@ nav.menu a.btn-nav {
     text-align: justify;
     font-size: 1.2em;
     color: white;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 .sobre-texto h1 {
@@ -117,7 +117,7 @@ nav.menu a.btn-nav {
 
 .sobre-imagem img {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
     display: block;
     border-radius: 10px;
@@ -164,7 +164,7 @@ nav.menu a.btn-nav {
 }
 
 .titulo {
-    padding: 3px auto;
+    padding: auto;
     color: #68566e;
     font-family: "Century Gothic", sans-serif;
     background-color: #9b8aa1;
@@ -185,6 +185,7 @@ nav.menu a.btn-nav {
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
 }
 
 /* ------------------------------------------------------------- */
@@ -213,7 +214,7 @@ nav.menu a.btn-nav {
 
 .cat-right {
     margin-left: auto;
-    margin-right: 500px;
+    margin-right: 400px;
     align-items: center;
     justify-items: center;
     background: rgba(255, 255, 255, 0.45);
@@ -237,7 +238,7 @@ nav.menu a.btn-nav {
 
 .categoria h3 {
     font-family: "Sigmar", sans-serif;
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bolder;
     color: #ffffff;
     margin: 0;
@@ -264,10 +265,7 @@ nav.menu a.btn-nav {
     content: none;
 }
 
-.img-curso {
-    width: 500px;
-    margin-top: 20px;
-}
+
 
 /* ------------------------------------------------------------- */
 /* CONTATO */
